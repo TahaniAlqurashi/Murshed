@@ -1,0 +1,142 @@
+[
+  {
+    "message": "هل أقدر أسجل CS2105؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "eligibility_check"
+  },
+  {
+    "message": "هل استطيع تسجيل CS2105؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "eligibility_check"
+  },
+  {
+    "message": "هل مسموح لي أسجل CS2105؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "eligibility_check"
+  },
+  {
+    "message": "كم معدلي التراكمي؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "gpa_summary"
+  },
+  {
+    "message": "اعطني ملخص المعدل",
+    "expected_agent": "study_plan",
+    "expected_intent": "gpa_summary"
+  },
+  {
+    "message": "كم ساعة باقي لي؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "credits_summary"
+  },
+  {
+    "message": "كم الساعات المتبقية؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "credits_summary"
+  },
+  {
+    "message": "اقترح لي 5 مواد للفصل القادم",
+    "expected_agent": "study_plan",
+    "expected_intent": "recommendations"
+  },
+  {
+    "message": "رشح لي مواد مناسبة",
+    "expected_agent": "study_plan",
+    "expected_intent": "recommendations"
+  },
+  {
+    "message": "اعطني ملخص عن وضعي الأكاديمي",
+    "expected_agent": "study_plan",
+    "expected_intent": "snapshot"
+  },
+  {
+    "message": "كيف وضعي الأكاديمي؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "snapshot"
+  },
+  {
+    "message": "لو جبت A في CS2105 و B في AI2001 كم يصير معدلي؟",
+    "expected_agent": "study_plan",
+    "expected_intent": "gpa_simulate"
+  },
+  {
+    "message": "CS2105=A و AI2001=B",
+    "expected_agent": "study_plan",
+    "expected_intent": "gpa_simulate"
+  },
+  {
+    "message": "ما هو تعريف العام الدراسي؟",
+    "expected_agent": "knowledge_base",
+    "expected_intent": "knowledge_base_query"
+  },
+  {
+    "message": "ما المقصود بالمستوى الدراسي؟",
+    "expected_agent": "knowledge_base",
+    "expected_intent": "knowledge_base_query"
+  },
+  {
+    "message": "ما معنى النظام الدراسي؟",
+    "expected_agent": "knowledge_base",
+    "expected_intent": "knowledge_base_query"
+  },
+  {
+    "message": "ما هي حقوق الطلبة؟",
+    "expected_agent": "knowledge_base",
+    "expected_intent": "knowledge_base_query"
+  },
+  {
+    "message": "ما هو التظلم؟",
+    "expected_agent": "knowledge_base",
+    "expected_intent": "knowledge_base_query"
+  },
+  {
+    "message": "ما هي اللجنة الدائمة لحقوق الطلبة؟",
+    "expected_agent": "knowledge_base",
+    "expected_intent": "knowledge_base_query"
+  },
+  {
+    "message": "ما هو الفصل الصيفي؟",
+    "expected_agent": "knowledge_base",
+    "expected_intent": "knowledge_base_query"
+  },
+  {
+    "message": "ما هو تعريف العام الدراسي؟ وهل أقدر أسجل CS2105؟",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  },
+  {
+    "message": "CS2105",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  },
+  {
+    "message": "CS2105 AI2001",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  },
+  {
+    "message": "لو جبت ممتاز في CS2105",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  },
+  {
+    "message": "السلام عليكم",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  },
+  {
+    "message": "؟؟؟؟؟؟؟",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  },
+  {
+    "message": "من هو أفضل لاعب؟",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  },
+  {
+    "message": "معدلي if CS2105 A and rights student system what?",
+    "expected_agent": "input_guard",
+    "expected_intent": "input_error"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "GPA Summary - cumulative GPA",
+    "method": "GET",
+    "path": "/api/student-plan/1001/gpa",
+    "expected_path": ["data", "official", "cumulative_gpa", "cumulative_gpa_4"],
+    "expected_value": 2.11,
+    "tolerance": 0.01
+  },
+  {
+    "name": "GPA Summary - term GPA",
+    "method": "GET",
+    "path": "/api/student-plan/1001/gpa",
+    "expected_path": ["data", "official", "term_gpa", "term_gpa_4"],
+    "expected_value": 2.0,
+    "tolerance": 0.01
+  },
+  {
+    "name": "Credits Summary - completed total",
+    "method": "GET",
+    "path": "/api/student-plan/1001/credits",
+    "expected_path": ["data", "completed", "total"],
+    "expected_value": 35
+  },
+  {
+    "name": "Credits Summary - program total credits",
+    "method": "GET",
+    "path": "/api/student-plan/1001/credits",
+    "expected_path": ["data", "totals", "program_total_credits"],
+    "expected_value": 137
+  },
+  {
+    "name": "Eligibility - CS2105",
+    "method": "GET",
+    "path": "/api/student-plan/1001/eligibility/CS2105",
+    "expected_path": ["data", "eligible"],
+    "expected_value": true
+  },
+  {
+    "name": "Eligibility - CS2107",
+    "method": "GET",
+    "path": "/api/student-plan/1001/eligibility/CS2107",
+    "expected_path": ["data", "eligible"],
+    "expected_value": false
+  },
+  {
+    "name": "Snapshot - student id",
+    "method": "GET",
+    "path": "/api/student-plan/1001/snapshot",
+    "expected_path": ["data", "student", "student_id"],
+    "expected_value": 1001
+  },
+  {
+    "name": "Snapshot - level",
+    "method": "GET",
+    "path": "/api/student-plan/1001/snapshot",
+    "expected_path": ["data", "student", "level"],
+    "expected_value": 2
+  },
+  {
+    "name": "Snapshot - completed credits",
+    "method": "GET",
+    "path": "/api/student-plan/1001/snapshot",
+    "expected_path": ["data", "student", "completed_credits_computed"],
+    "expected_value": 35
+  },
+  {
+    "name": "Recommendations - list exists",
+    "method": "GET",
+    "path": "/api/student-plan/1001/recommendations?max_courses=5",
+    "expected_path": ["data", "recommended"],
+    "expected_type": "list_non_empty"
+  },
+  {
+    "name": "Recommendations - first course exists",
+    "method": "GET",
+    "path": "/api/student-plan/1001/recommendations?max_courses=5",
+    "expected_path": ["data", "recommended", 0, "course_id"],
+    "expected_exists": true
+  },
+  {
+    "name": "GPA Simulation - term GPA",
+    "method": "POST",
+    "path": "/api/student-plan/1001/gpa/simulate",
+    "body": {
+      "planned_courses": [
+        {
+          "course_id": "CS2105",
+          "expected_grade": "A"
+        },
+        {
+          "course_id": "AI2001",
+          "expected_grade": "B"
+        }
+      ]
+    },
+    "expected_path": ["data", "expected", "term_gpa_4"],
+    "expected_value": 3.45,
+    "tolerance": 0.01
+  },
+  {
+    "name": "GPA Simulation - planned count",
+    "method": "POST",
+    "path": "/api/student-plan/1001/gpa/simulate",
+    "body": {
+      "planned_courses": [
+        {
+          "course_id": "CS2105",
+          "expected_grade": "A"
+        },
+        {
+          "course_id": "AI2001",
+          "expected_grade": "B"
+        }
+      ]
+    },
+    "expected_path": ["data", "simulation_input", "planned_courses_count"],
+    "expected_value": 2
+  },
+  {
+    "name": "Eligibility - course not passed before",
+    "method": "GET",
+    "path": "/api/student-plan/1001/eligibility/CS2105",
+    "expected_path": ["data", "already_passed"],
+    "expected_value": false
+  },
+  {
+    "name": "Snapshot - passed courses count",
+    "method": "GET",
+    "path": "/api/student-plan/1001/snapshot",
+    "expected_path": ["data", "passed_courses_count"],
+    "expected_value": 12
+  }
+]

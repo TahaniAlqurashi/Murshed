@@ -1,0 +1,4584 @@
+{
+  "summary": [
+    {
+      "agent": "Study Plan Agent",
+      "metric": "Accuracy",
+      "score": 100.0,
+      "correct": 15,
+      "total": 15
+    },
+    {
+      "agent": "Knowledge Base Agent",
+      "metric": "Top-3 Retrieval Accuracy",
+      "score": 97.87,
+      "correct": 368,
+      "total": 376
+    },
+    {
+      "agent": "Chatbot Layer",
+      "metric": "Intent Routing Accuracy",
+      "score": 96.43,
+      "correct": 27,
+      "total": 28
+    }
+  ],
+  "details": {
+    "study_plan_agent": [
+      {
+        "name": "GPA Summary - cumulative GPA",
+        "passed": true,
+        "expected": 2.11,
+        "actual": 2.114285714285714,
+        "time_seconds": 7.4
+      },
+      {
+        "name": "GPA Summary - term GPA",
+        "passed": true,
+        "expected": 2.0,
+        "actual": 2.0,
+        "time_seconds": 4.19
+      },
+      {
+        "name": "Credits Summary - completed total",
+        "passed": true,
+        "expected": 35,
+        "actual": 35,
+        "time_seconds": 4.33
+      },
+      {
+        "name": "Credits Summary - program total credits",
+        "passed": true,
+        "expected": 137,
+        "actual": 137,
+        "time_seconds": 4.43
+      },
+      {
+        "name": "Eligibility - CS2105",
+        "passed": true,
+        "expected": true,
+        "actual": true,
+        "time_seconds": 6.27
+      },
+      {
+        "name": "Eligibility - CS2107",
+        "passed": true,
+        "expected": false,
+        "actual": false,
+        "time_seconds": 4.39
+      },
+      {
+        "name": "Snapshot - student id",
+        "passed": true,
+        "expected": 1001,
+        "actual": 1001,
+        "time_seconds": 4.32
+      },
+      {
+        "name": "Snapshot - level",
+        "passed": true,
+        "expected": 2,
+        "actual": 2,
+        "time_seconds": 4.13
+      },
+      {
+        "name": "Snapshot - completed credits",
+        "passed": true,
+        "expected": 35,
+        "actual": 35,
+        "time_seconds": 4.61
+      },
+      {
+        "name": "Recommendations - list exists",
+        "passed": true,
+        "expected": "list_non_empty",
+        "actual": [
+          {
+            "course_id": "CUR1101",
+            "course_name_ar": "مهارات جامعية",
+            "course_name_en": "University Skills",
+            "course_type": "required",
+            "credits": 0,
+            "level": 2,
+            "prerequisites": [],
+            "reason": "Required course (priority)",
+            "unlock_score": 0
+          },
+          {
+            "course_id": "SEC1101",
+            "course_name_ar": "مقدمة في الأمن السيبراني",
+            "course_name_en": "Introduction to Cybersecurity",
+            "course_type": "required",
+            "credits": 3,
+            "level": 3,
+            "prerequisites": [],
+            "reason": "Required course (priority)",
+            "unlock_score": 5
+          },
+          {
+            "course_id": "CEN2011",
+            "course_name_ar": "التصميم الرقمي المنطقي",
+            "course_name_en": "Digital Logic Design",
+            "course_type": "required",
+            "credits": 3,
+            "level": 3,
+            "prerequisites": [],
+            "reason": "Required course (priority)",
+            "unlock_score": 1
+          },
+          {
+            "course_id": "CS2105",
+            "course_name_ar": "هياكل البيانات والخوازميات جافا",
+            "course_name_en": "Data Structures and Algorithms in Java",
+            "course_type": "required",
+            "credits": 3,
+            "level": 3,
+            "prerequisites": [
+              "CS1704"
+            ],
+            "reason": "Required course (priority)",
+            "unlock_score": 1
+          },
+          {
+            "course_id": "MTH1441",
+            "course_name_ar": "الجبر الخطي",
+            "course_name_en": "Linear Algebra",
+            "course_type": "required",
+            "credits": 3,
+            "level": 3,
+            "prerequisites": [],
+            "reason": "Required course (priority)",
+            "unlock_score": 1
+          }
+        ],
+        "time_seconds": 4.49
+      },
+      {
+        "name": "Recommendations - first course exists",
+        "passed": true,
+        "expected": "exists",
+        "actual": "CUR1101",
+        "time_seconds": 3.79
+      },
+      {
+        "name": "GPA Simulation - term GPA",
+        "passed": true,
+        "expected": 3.45,
+        "actual": 3.45,
+        "time_seconds": 2.9
+      },
+      {
+        "name": "GPA Simulation - planned count",
+        "passed": true,
+        "expected": 2,
+        "actual": 2,
+        "time_seconds": 2.45
+      },
+      {
+        "name": "Eligibility - course not passed before",
+        "passed": true,
+        "expected": false,
+        "actual": false,
+        "time_seconds": 6.95
+      },
+      {
+        "name": "Snapshot - passed courses count",
+        "passed": true,
+        "expected": 12,
+        "actual": 12,
+        "time_seconds": 2.88
+      }
+    ],
+    "knowledge_base_agent": [
+      {
+        "question_id": "1",
+        "question": "ما هو تعريف العام الدراسي في اللائحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "1",
+          "17",
+          "2"
+        ],
+        "time_seconds": 7.47
+      },
+      {
+        "question_id": "2",
+        "question": "ما هو تعريف النظام الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "2",
+          "38",
+          "31"
+        ],
+        "time_seconds": 3.69
+      },
+      {
+        "question_id": "3",
+        "question": "ما هي المدة الزمنية للفصل الدراسي في أنظمة الدراسة المختلفة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "3",
+          "6",
+          "4"
+        ],
+        "time_seconds": 2.82
+      },
+      {
+        "question_id": "4",
+        "question": "ما هي مدة المستوى الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "4",
+          "38",
+          "60"
+        ],
+        "time_seconds": 1.98
+      },
+      {
+        "question_id": "5",
+        "question": "ما هي مدة السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "5",
+          "41",
+          "105"
+        ],
+        "time_seconds": 1.99
+      },
+      {
+        "question_id": "6",
+        "question": "ما هي المدة الزمنية للفصل الصيفي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "6",
+          "7",
+          "3"
+        ],
+        "time_seconds": 2.74
+      },
+      {
+        "question_id": "7",
+        "question": "ما هي المدة الزمنية للمستوى الصيفي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "7",
+          "6",
+          "3"
+        ],
+        "time_seconds": 2.15
+      },
+      {
+        "question_id": "8",
+        "question": "ماذا تشمل الخطة الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "8",
+          "62",
+          "9"
+        ],
+        "time_seconds": 1.76
+      },
+      {
+        "question_id": "9",
+        "question": "ما هو المقرر الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "9",
+          "154",
+          "211"
+        ],
+        "time_seconds": 4.73
+      },
+      {
+        "question_id": "10",
+        "question": "ما هي مدة الوحدة الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "10",
+          "4",
+          "3"
+        ],
+        "time_seconds": 1.75
+      },
+      {
+        "question_id": "11",
+        "question": "ما هي أنماط التعليم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "11",
+          "42",
+          "43"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "12",
+        "question": "ما هو برنامج الترقية الأكاديمية الدراسية (التجسير)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "12",
+          "162",
+          "166"
+        ],
+        "time_seconds": 2.98
+      },
+      {
+        "question_id": "13",
+        "question": "ماذا تشمل درجة الأعمال الفصلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "13",
+          "16",
+          "197"
+        ],
+        "time_seconds": 2.25
+      },
+      {
+        "question_id": "14",
+        "question": "ما هو الاختبار النهائي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "14",
+          "15",
+          "195"
+        ],
+        "time_seconds": 2.84
+      },
+      {
+        "question_id": "15",
+        "question": "ما هي درجة الاختبار النهائي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "15",
+          "14",
+          "254"
+        ],
+        "time_seconds": 2.57
+      },
+      {
+        "question_id": "16",
+        "question": "ما هي الدرجة النهائية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "15",
+          "16",
+          "14"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "17",
+        "question": "ما هو السجل الأكاديمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "17",
+          "133",
+          "191"
+        ],
+        "time_seconds": 2.1
+      },
+      {
+        "question_id": "18",
+        "question": "من هو الطالب الزائر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "18",
+          "181",
+          "191"
+        ],
+        "time_seconds": 2.6
+      },
+      {
+        "question_id": "19",
+        "question": "ما هو التقدير؟",
+        "passed": true,
+        "retrieved_ids": [
+          "19",
+          "379",
+          "239"
+        ],
+        "time_seconds": 1.82
+      },
+      {
+        "question_id": "20",
+        "question": "ما هو تقدير غير مكتمل وما هو رمزه؟",
+        "passed": true,
+        "retrieved_ids": [
+          "379",
+          "20",
+          "21"
+        ],
+        "time_seconds": 1.81
+      },
+      {
+        "question_id": "21",
+        "question": "ما هو تقدير مستمر وما هو رمزه؟",
+        "passed": true,
+        "retrieved_ids": [
+          "379",
+          "21",
+          "20"
+        ],
+        "time_seconds": 1.44
+      },
+      {
+        "question_id": "22",
+        "question": "ما المعدل الفصلي وكيف يحسب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "22",
+          "23",
+          "237"
+        ],
+        "time_seconds": 1.41
+      },
+      {
+        "question_id": "23",
+        "question": "ما المعدل التراكمي كيف يحسب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "23",
+          "252",
+          "247"
+        ],
+        "time_seconds": 1.41
+      },
+      {
+        "question_id": "24",
+        "question": "ما هو التقدير العام؟",
+        "passed": true,
+        "retrieved_ids": [
+          "19",
+          "239",
+          "24"
+        ],
+        "time_seconds": 5.42
+      },
+      {
+        "question_id": "25",
+        "question": "ما هو العبء الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "25",
+          "100",
+          "69"
+        ],
+        "time_seconds": 1.74
+      },
+      {
+        "question_id": "26",
+        "question": "ما هو الهدف الذي تسعى هذه اللائحة لتحقيقه؟",
+        "passed": true,
+        "retrieved_ids": [
+          "26",
+          "27",
+          "333"
+        ],
+        "time_seconds": 2.17
+      },
+      {
+        "question_id": "27",
+        "question": "على أي الأنظمة والقوانين تسري أحكام هذه اللائحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "27",
+          "265",
+          "266"
+        ],
+        "time_seconds": 1.99
+      },
+      {
+        "question_id": "28",
+        "question": "ما هي الإجراءات التي تتقيد بها الجامعة عند إقرار برامجها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "261",
+          "49",
+          "28"
+        ],
+        "time_seconds": 2.04
+      },
+      {
+        "question_id": "29",
+        "question": "كيف يتدرج الطالب في الدراسة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "31",
+          "29",
+          "181"
+        ],
+        "time_seconds": 1.7
+      },
+      {
+        "question_id": "30",
+        "question": "ما هو التزام أقسام الكليات والمعاهد عند إقرار برامجها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "30",
+          "52",
+          "51"
+        ],
+        "time_seconds": 1.27
+      },
+      {
+        "question_id": "31",
+        "question": "ما هي أنظمة التدرج للطالب وفقاً للخطة الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "31",
+          "29",
+          "48"
+        ],
+        "time_seconds": 1.95
+      },
+      {
+        "question_id": "32",
+        "question": "متى ينتقل الطالب من برنامج السنة الأولى/التأهيلية إلى السنة الثانية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "32",
+          "174",
+          "173"
+        ],
+        "time_seconds": 1.66
+      },
+      {
+        "question_id": "33",
+        "question": "ما هي أسس مفاضلة التسكين في التخصصات بين الطلبة المجتازين؟",
+        "passed": true,
+        "retrieved_ids": [
+          "33",
+          "34",
+          "165"
+        ],
+        "time_seconds": 1.87
+      },
+      {
+        "question_id": "34",
+        "question": "على أي أساس تتم مفاضلة التسكين في التخصصات الدقيقة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "34",
+          "33",
+          "380"
+        ],
+        "time_seconds": 1.93
+      },
+      {
+        "question_id": "36",
+        "question": "كيف يقسم العام الدراسي وتوزع متطلبات التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "36",
+          "37",
+          "211"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "37",
+        "question": "ما هو توزيع متطلبات التخرج في نظام الفصلين؟",
+        "passed": true,
+        "retrieved_ids": [
+          "37",
+          "36",
+          "192"
+        ],
+        "time_seconds": 1.33
+      },
+      {
+        "question_id": "38",
+        "question": "كيف يتم تقسيم العام الدراسي وفقاً لنظام المستويات الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "38",
+          "36",
+          "43"
+        ],
+        "time_seconds": 1.43
+      },
+      {
+        "question_id": "39",
+        "question": "من هي الجهة التي تتولى إعداد التقويم الدراسي السنوي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "39",
+          "68",
+          "73"
+        ],
+        "time_seconds": 1.33
+      },
+      {
+        "question_id": "40",
+        "question": "من هي الجهة التي تعتمد عدد الفصول الدراسية في العام؟",
+        "passed": true,
+        "retrieved_ids": [
+          "40",
+          "73",
+          "36"
+        ],
+        "time_seconds": 1.29
+      },
+      {
+        "question_id": "41",
+        "question": "هل يجوز أن تكون الدراسة على أساس السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "41",
+          "5",
+          "124"
+        ],
+        "time_seconds": 1.42
+      },
+      {
+        "question_id": "42",
+        "question": "هل يجوز لمجلس الجامعة الأخذ بأنماط تعليم مختلفة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "42",
+          "261",
+          "245"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "43",
+        "question": "كيف يحدد نمط التعليم لكل مقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "43",
+          "9",
+          "159"
+        ],
+        "time_seconds": 1.72
+      },
+      {
+        "question_id": "44",
+        "question": "ما هو الحد الأدنى لنسبة المقررات التي تقدم بأنماط تعليم مختلفة عن التعليم الحضوري؟",
+        "passed": true,
+        "retrieved_ids": [
+          "44",
+          "45",
+          "155"
+        ],
+        "time_seconds": 1.67
+      },
+      {
+        "question_id": "45",
+        "question": "ما هي النسبة المسموحة للمقررات غير الحضورية وضوابطها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "45",
+          "44",
+          "180"
+        ],
+        "time_seconds": 5.53
+      },
+      {
+        "question_id": "46",
+        "question": "كيف تُعقد جميع الاختبارات النصفية والنهائية للمقررات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "195",
+          "46",
+          "203"
+        ],
+        "time_seconds": 1.86
+      },
+      {
+        "question_id": "47",
+        "question": "ما هو التزام أستاذ المقرر تجاه نمط التعليم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "47",
+          "43",
+          "192"
+        ],
+        "time_seconds": 2.11
+      },
+      {
+        "question_id": "48",
+        "question": "كيف يُعامل الطالب في الأنماط التعليمية المختلفة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "48",
+          "181",
+          "31"
+        ],
+        "time_seconds": 2.31
+      },
+      {
+        "question_id": "49",
+        "question": "ما هي البرامج التي يجوز لمجلس الجامعة إقرارها بناءً على اقتراح الكليات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "49",
+          "261",
+          "30"
+        ],
+        "time_seconds": 2.09
+      },
+      {
+        "question_id": "50",
+        "question": "هل يجوز قبول حامل درجة البكالوريوس لدراسة بكالوريوس آخر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "50",
+          "65",
+          "55"
+        ],
+        "time_seconds": 2.61
+      },
+      {
+        "question_id": "51",
+        "question": "ما الذي تتقيد به الكليات عند إقرار البرامج البينية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "51",
+          "52",
+          "30"
+        ],
+        "time_seconds": 2.22
+      },
+      {
+        "question_id": "52",
+        "question": "بماذا تلتزم الكليات عند الرغبة في استحداث برامج بينية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "52",
+          "72",
+          "30"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "53",
+        "question": "ما هو الشرط المتعلق بالنسبة الموزونة لدراسة البكالوريوس في تخصص آخر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "53",
+          "149",
+          "54"
+        ],
+        "time_seconds": 1.61
+      },
+      {
+        "question_id": "54",
+        "question": "ما هو الحد الأقصى للمقررات الدراسية المعادلة للطالب في دراسة بكالوريوس آخر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "54",
+          "50",
+          "154"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "55",
+        "question": "هل يسمح للطالب بتغيير تخصصه بعد القبول على برنامج البكالوريوس في تخصص آخر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "55",
+          "50",
+          "65"
+        ],
+        "time_seconds": 1.9
+      },
+      {
+        "question_id": "56",
+        "question": "متى يجوز لمجلس الجامعة منح الطالب درجة الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "56",
+          "60",
+          "64"
+        ],
+        "time_seconds": 1.79
+      },
+      {
+        "question_id": "57",
+        "question": "ما هي الحالة الأكاديمية للطالب المطلوبة عند تقديم طلب الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "57",
+          "58",
+          "64"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "58",
+        "question": "هل يجوز للطالب المفصول أو المنسحب طلب إعادة القيد للحصول على درجة الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "58",
+          "61",
+          "110"
+        ],
+        "time_seconds": 1.62
+      },
+      {
+        "question_id": "59",
+        "question": "ما هو الحد الأدنى لتقدير الطالب بعد منحه درجة الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "59",
+          "60",
+          "378"
+        ],
+        "time_seconds": 1.81
+      },
+      {
+        "question_id": "60",
+        "question": "متى يُمنح الطالب درجة الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "60",
+          "56",
+          "64"
+        ],
+        "time_seconds": 1.54
+      },
+      {
+        "question_id": "61",
+        "question": "هل يجوز للطالب التقدم بطلب إعادة القيد للدراسة بعد حصوله على وثيقة الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "61",
+          "58",
+          "110"
+        ],
+        "time_seconds": 1.77
+      },
+      {
+        "question_id": "62",
+        "question": "ما هو الشرط المتعلق بالخطة الدراسية لمنح درجة الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "62",
+          "60",
+          "56"
+        ],
+        "time_seconds": 5.42
+      },
+      {
+        "question_id": "63",
+        "question": "من يحدد شروط وضوابط القبول وعدد الطلاب الذين يمكن قبولهم في العام الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "63",
+          "137",
+          "66"
+        ],
+        "time_seconds": 1.76
+      },
+      {
+        "question_id": "64",
+        "question": "هل يجوز قبول الطالب الحاصل على درجة الدبلوم لإكمال الدراسة للبكالوريوس؟",
+        "passed": true,
+        "retrieved_ids": [
+          "64",
+          "65",
+          "50"
+        ],
+        "time_seconds": 2.84
+      },
+      {
+        "question_id": "65",
+        "question": "هل يجوز قبول الطالب الحاصل على درجة البكالوريوس للحصول على بكالوريوس آخر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "65",
+          "50",
+          "64"
+        ],
+        "time_seconds": 1.66
+      },
+      {
+        "question_id": "66",
+        "question": "ما الذي يحدد الشروط والإجراءات الخاصة بالقبول ومعادلة المقررات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "66",
+          "211",
+          "154"
+        ],
+        "time_seconds": 1.99
+      },
+      {
+        "question_id": "67",
+        "question": "من يضع القواعد المنظمة للإجراءات الأكاديمية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "67",
+          "73",
+          "68"
+        ],
+        "time_seconds": 2.01
+      },
+      {
+        "question_id": "68",
+        "question": "من هي الجهة التي تحدد التقويم الزمني لأعمال التسجيل والحذف والإضافة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "68",
+          "39",
+          "199"
+        ],
+        "time_seconds": 1.85
+      },
+      {
+        "question_id": "69",
+        "question": "ما هو الحد الأدنى للعبء الدراسي للطالب، وما هي الاستثناءات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "69",
+          "70",
+          "142"
+        ],
+        "time_seconds": 2.03
+      },
+      {
+        "question_id": "70",
+        "question": "ما هو الحد الأعلى للعبء الدراسي للطالب في الفصل الدراسي الصيفي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "70",
+          "69",
+          "92"
+        ],
+        "time_seconds": 2.12
+      },
+      {
+        "question_id": "71",
+        "question": "ما الذي يجب مراعاته عند تسجيل الطالب للمقررات الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "71",
+          "215",
+          "214"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "72",
+        "question": "هل يجوز الجمع بين تسجيل مقررات والتدريب التعاوني؟",
+        "passed": true,
+        "retrieved_ids": [
+          "72",
+          "261",
+          "195"
+        ],
+        "time_seconds": 1.85
+      },
+      {
+        "question_id": "73",
+        "question": "من هي الجهة التي تعتمد الجدول الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "73",
+          "40",
+          "39"
+        ],
+        "time_seconds": 2.04
+      },
+      {
+        "question_id": "74",
+        "question": "متى يجوز تعديل الجدول الدراسي أو حذف مقررات من قبل القسم الأكاديمي بعد بدء الفصل الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "74",
+          "99",
+          "75"
+        ],
+        "time_seconds": 2.32
+      },
+      {
+        "question_id": "75",
+        "question": "هل يجوز للطالب حذف مقرر دراسي في برامج السنة الأولى أو السنة التأهيلية أو نظام السنة الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "75",
+          "32",
+          "173"
+        ],
+        "time_seconds": 2.47
+      },
+      {
+        "question_id": "76",
+        "question": "ما هي ضوابط تسجيل مقررات برامج السنة الأولى والسنة التأهيلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "76",
+          "173",
+          "174"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "77",
+        "question": "ما الإجراء المتبع في حال عدم وجود مقررات مسجلة للطالب بعد انتهاء فترة التسجيل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "77",
+          "101",
+          "111"
+        ],
+        "time_seconds": 1.9
+      },
+      {
+        "question_id": "78",
+        "question": "متى يحرم الطالب من دخول الاختبار النهائي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "78",
+          "79",
+          "207"
+        ],
+        "time_seconds": 7.28
+      },
+      {
+        "question_id": "79",
+        "question": "ما هي نسب الغياب التي تؤدي إلى حرمان الطالب من دخول الاختبار النهائي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "79",
+          "78",
+          "80"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "80",
+        "question": "متى يتم إشعار الطالب بالحرمان؟",
+        "passed": true,
+        "retrieved_ids": [
+          "80",
+          "79",
+          "337"
+        ],
+        "time_seconds": 1.54
+      },
+      {
+        "question_id": "81",
+        "question": "ما هي شروط رفع الحرمان؟",
+        "passed": true,
+        "retrieved_ids": [
+          "81",
+          "82",
+          "80"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "82",
+        "question": "ما الذي يجب مراعاته في أحكام رفع الحرمان؟",
+        "passed": true,
+        "retrieved_ids": [
+          "82",
+          "81",
+          "80"
+        ],
+        "time_seconds": 1.84
+      },
+      {
+        "question_id": "83",
+        "question": "ما الإجراء المتبع في حال تعذر البت في عذر الطالب قبل انعقاد الاختبار؟",
+        "passed": true,
+        "retrieved_ids": [
+          "83",
+          "210",
+          "207"
+        ],
+        "time_seconds": 1.66
+      },
+      {
+        "question_id": "84",
+        "question": "ما هو شرط نسبة الحضور لرفع الحرمان عند قبول عذر الطالب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "84",
+          "79",
+          "81"
+        ],
+        "time_seconds": 1.62
+      },
+      {
+        "question_id": "85",
+        "question": "ما هي شروط الاعتذار عن الاستمرار في الدراسة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "85",
+          "93",
+          "88"
+        ],
+        "time_seconds": 1.82
+      },
+      {
+        "question_id": "86",
+        "question": "من هي الجهة المسؤولة عن استقبال طلب الاعتذار عن الاستمرار في الدراسة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "86",
+          "85",
+          "90"
+        ],
+        "time_seconds": 2.85
+      },
+      {
+        "question_id": "87",
+        "question": "ما هو التقدير الذي يُرصد للطالب المعتذر عن الفصل الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "87",
+          "205",
+          "128"
+        ],
+        "time_seconds": 1.65
+      },
+      {
+        "question_id": "88",
+        "question": "هل يُحتسب الاعتذار عن الفصل الدراسي الصيفي ضمن عدد مرات الاعتذار المسموحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "88",
+          "93",
+          "92"
+        ],
+        "time_seconds": 1.64
+      },
+      {
+        "question_id": "89",
+        "question": "هل تُحتسب فصول الاعتذار ضمن المدة النظامية لإنهاء متطلبات التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "89",
+          "92",
+          "93"
+        ],
+        "time_seconds": 1.89
+      },
+      {
+        "question_id": "90",
+        "question": "من هم الطلبة الذين لا يشملهم الاعتذار، وما هو الإجراء المتبع في حال وجود عذر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "90",
+          "93",
+          "85"
+        ],
+        "time_seconds": 2.26
+      },
+      {
+        "question_id": "91",
+        "question": "ما الإجراء المتبع في حال تغير الخطط الدراسية لطالب معتذر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "91",
+          "83",
+          "90"
+        ],
+        "time_seconds": 2.08
+      },
+      {
+        "question_id": "92",
+        "question": "ما هو الحد الأقصى لعدد فصول الاعتذار للطالب في نظام الفصول الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "92",
+          "93",
+          "88"
+        ],
+        "time_seconds": 1.56
+      },
+      {
+        "question_id": "93",
+        "question": "ما هي أحكام الاعتذار المطبقة على طلبة نظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "93",
+          "90",
+          "85"
+        ],
+        "time_seconds": 3.12
+      },
+      {
+        "question_id": "94",
+        "question": "هل يجوز للطالب الانسحاب من مقرر دراسي أو أكثر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "94",
+          "101",
+          "97"
+        ],
+        "time_seconds": 6.46
+      },
+      {
+        "question_id": "95",
+        "question": "كم عدد المقررات المسموح الانسحاب منها خلال الفصل الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "95",
+          "101",
+          "99"
+        ],
+        "time_seconds": 2.14
+      },
+      {
+        "question_id": "96",
+        "question": "متى لا يجوز للطالب الانسحاب من مقرر دراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "99",
+          "101",
+          "96"
+        ],
+        "time_seconds": 1.79
+      },
+      {
+        "question_id": "97",
+        "question": "هل يسمح للطالب بالانسحاب من المقرر ذاته أكثر من مرة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "97",
+          "101",
+          "79"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "98",
+        "question": "ما هو التقدير الذي يُرصد للطالب المنسحب من مقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "98",
+          "128",
+          "211"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "99",
+        "question": "متى لا يجوز للطالب الانسحاب من مقرر دراسي (بجانب ما ذكر سابقاً)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "99",
+          "96",
+          "101"
+        ],
+        "time_seconds": 1.74
+      },
+      {
+        "question_id": "100",
+        "question": "ما هو الشرط المتعلق بالعبء الدراسي عند الانسحاب من مقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "100",
+          "101",
+          "94"
+        ],
+        "time_seconds": 2.62
+      },
+      {
+        "question_id": "101",
+        "question": "هل يحق للطالب الانسحاب في حال سجل مقرراً دراسياً واحداً؟",
+        "passed": true,
+        "retrieved_ids": [
+          "101",
+          "94",
+          "96"
+        ],
+        "time_seconds": 1.88
+      },
+      {
+        "question_id": "102",
+        "question": "ما هي ضوابط تأجيل الدراسة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "102",
+          "105",
+          "104"
+        ],
+        "time_seconds": 1.74
+      },
+      {
+        "question_id": "103",
+        "question": "من هي الجهة المسؤولة عن استقبال طلب تأجيل الدراسة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "103",
+          "102",
+          "107"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "104",
+        "question": "ما هو الحد الأقصى لعدد فصول التأجيل في النظام الفصلي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "104",
+          "105",
+          "92"
+        ],
+        "time_seconds": 1.6
+      },
+      {
+        "question_id": "105",
+        "question": "ما هي أحكام التأجيل المطبقة على طلبة نظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "105",
+          "93",
+          "107"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "106",
+        "question": "هل يجوز للطالب تأجيل الدراسة في الفصل الدراسي الصيفي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "106",
+          "102",
+          "99"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "107",
+        "question": "من هم الطلبة الذين لا يشملهم التأجيل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "107",
+          "256",
+          "115"
+        ],
+        "time_seconds": 1.71
+      },
+      {
+        "question_id": "108",
+        "question": "هل تُحتسب مدة التأجيل ضمن المدة اللازمة لإنهاء متطلبات التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "108",
+          "105",
+          "104"
+        ],
+        "time_seconds": 1.59
+      },
+      {
+        "question_id": "109",
+        "question": "ما هو الإجراء المتبع في حال تغير الخطط الدراسية لطالب مؤجل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "109",
+          "125",
+          "114"
+        ],
+        "time_seconds": 1.55
+      },
+      {
+        "question_id": "110",
+        "question": "متى يُطوى قيد الطالب، وهل يمكنه طلب إعادة القيد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "110",
+          "113",
+          "58"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "111",
+        "question": "ما هي حالة الطالب الأكاديمية عند الانقطاع دون طلب وتُحصَّل له نتائج (ح)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "111",
+          "110",
+          "113"
+        ],
+        "time_seconds": 1.81
+      },
+      {
+        "question_id": "112",
+        "question": "ما هي المدة المسموحة للطالب المنقطع لطلب إعادة القيد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "112",
+          "110",
+          "121"
+        ],
+        "time_seconds": 5.67
+      },
+      {
+        "question_id": "113",
+        "question": "ما هو الحد الأقصى لمرات إعادة القيد للطالب المطوي قيده بسبب الانقطاع او الغياب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "113",
+          "110",
+          "119"
+        ],
+        "time_seconds": 1.69
+      },
+      {
+        "question_id": "114",
+        "question": "ما هو الإجراء المتبع في حال تغير الخطط الدراسية لطالب أعيد قيده؟",
+        "passed": true,
+        "retrieved_ids": [
+          "125",
+          "114",
+          "109"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "115",
+        "question": "من هم الطلبة الذين لا يشملهم إعادة القيد بسبب الانقطاع؟",
+        "passed": true,
+        "retrieved_ids": [
+          "115",
+          "113",
+          "122"
+        ],
+        "time_seconds": 1.58
+      },
+      {
+        "question_id": "116",
+        "question": "هل يشمل إعادة القيد الطالب الذي حصل على ثلاثة إنذارات أكاديمية متتالية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "116",
+          "127",
+          "130"
+        ],
+        "time_seconds": 1.87
+      },
+      {
+        "question_id": "117",
+        "question": "هل تحتسب مدة الانقطاع ضمن المدة اللازمة لإكمال متطلبات التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "117",
+          "112",
+          "108"
+        ],
+        "time_seconds": 1.87
+      },
+      {
+        "question_id": "118",
+        "question": "ما هي المدة اللازمة لإعادة قيد الطالب المفصول لأسباب تأديبية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "119",
+          "118",
+          "110"
+        ],
+        "time_seconds": 2.21
+      },
+      {
+        "question_id": "119",
+        "question": "ما هي شروط إعادة قيد الطالب المفصول تأديبياً (لغير الكليات الصحية والطبية)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "119",
+          "118",
+          "110"
+        ],
+        "time_seconds": 1.48
+      },
+      {
+        "question_id": "120",
+        "question": "هل يجوز للطالب المنسحب من الجامعة التقدم بطلب إعادة قيده؟",
+        "passed": true,
+        "retrieved_ids": [
+          "120",
+          "121",
+          "110"
+        ],
+        "time_seconds": 1.83
+      },
+      {
+        "question_id": "121",
+        "question": "ما هي المدة المتاحة للطالب المنسحب لطلب إعادة القيد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "121",
+          "110",
+          "112"
+        ],
+        "time_seconds": 2.25
+      },
+      {
+        "question_id": "122",
+        "question": "من هم الطلبة الذين لا يشملهم إعادة القيد بعد الانسحاب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "122",
+          "115",
+          "121"
+        ],
+        "time_seconds": 1.79
+      },
+      {
+        "question_id": "123",
+        "question": "ما هو الإجراء المتبع إذا مضى على انسحاب الطالب أكثر من فصلين دراسيين؟",
+        "passed": true,
+        "retrieved_ids": [
+          "123",
+          "101",
+          "121"
+        ],
+        "time_seconds": 1.39
+      },
+      {
+        "question_id": "124",
+        "question": "ما هو الإجراء المتبع إذا انسحب الطالب على نظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "124",
+          "101",
+          "221"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "125",
+        "question": "ما هو الإجراء المتبع في حال تغير الخطط الدراسية لطالب أعيد قيده بعد الانسحاب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "125",
+          "114",
+          "109"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "126",
+        "question": "كم مرة يجوز إعادة قيد الطالب المنسحب من الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "121",
+          "126",
+          "120"
+        ],
+        "time_seconds": 2.07
+      },
+      {
+        "question_id": "127",
+        "question": "هل يشمل إعادة القيد الطالب المنسحب الذي حصل على ثلاث إنذارات أكاديمية متتالية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "127",
+          "116",
+          "130"
+        ],
+        "time_seconds": 1.86
+      },
+      {
+        "question_id": "128",
+        "question": "ما هو التقدير الذي يرصد للطالب المنتظم في جميع مقررات فصل الانسحاب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "128",
+          "205",
+          "211"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "129",
+        "question": "هل تحتسب مدة الانسحاب ضمن المدة اللازمة لإكمال متطلبات التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "121",
+          "129",
+          "108"
+        ],
+        "time_seconds": 1.78
+      },
+      {
+        "question_id": "130",
+        "question": "متى يُفصل الطالب من الجامعة بسبب الإنذارات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "130",
+          "135",
+          "132"
+        ],
+        "time_seconds": 2.31
+      },
+      {
+        "question_id": "131",
+        "question": "متى يُفصل الطالب من الجامعة بسبب تجاوز المدة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "131",
+          "136",
+          "110"
+        ],
+        "time_seconds": 3.81
+      },
+      {
+        "question_id": "132",
+        "question": "متى يتم فصل الطالب في حال الإنذارات المتتالية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "132",
+          "130",
+          "135"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "133",
+        "question": "ما الذي يثبت في السجل الأكاديمي للطالب المفصول أكاديمياً؟",
+        "passed": true,
+        "retrieved_ids": [
+          "133",
+          "111",
+          "17"
+        ],
+        "time_seconds": 1.55
+      },
+      {
+        "question_id": "134",
+        "question": "هل يسمح للطالب بالتأجيل أو الاعتذار عن الفصل الدراسي بعد الحصول على الفرصة الإضافية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "134",
+          "256",
+          "92"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "135",
+        "question": "ما هي الإجراءات المتبعة عند حصول الطالب على ثلاثة إنذارات أكاديمية لانخفاض معدله؟",
+        "passed": true,
+        "retrieved_ids": [
+          "135",
+          "130",
+          "132"
+        ],
+        "time_seconds": 1.64
+      },
+      {
+        "question_id": "136",
+        "question": "ما هي الإجراءات المتبعة في حال تجاوز الطالب نصف المدة المقررة لتخرجه علاوة على مدة البرنامج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "136",
+          "131",
+          "119"
+        ],
+        "time_seconds": 1.64
+      },
+      {
+        "question_id": "137",
+        "question": "ما هي الشروط الأساسية لقبول تحويل الطالب من خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "137",
+          "140",
+          "162"
+        ],
+        "time_seconds": 2.1
+      },
+      {
+        "question_id": "138",
+        "question": "ما هو الشرط المتعلق بالفصل التأديبي عند قبول تحويل الطالب من خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "138",
+          "137",
+          "140"
+        ],
+        "time_seconds": 1.79
+      },
+      {
+        "question_id": "139",
+        "question": "ما هي الضوابط الأخرى التي تحكم تحويل الطالب من خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "139",
+          "137",
+          "160"
+        ],
+        "time_seconds": 1.6
+      },
+      {
+        "question_id": "140",
+        "question": "متى يتم تحويل الطالب من خارج الجامعة بالنسبة للاختبارات والمقابلات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "140",
+          "162",
+          "137"
+        ],
+        "time_seconds": 1.61
+      },
+      {
+        "question_id": "141",
+        "question": "ما هو الشرط المتعلق بالتخصص المحول إليه الطالب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "141",
+          "179",
+          "175"
+        ],
+        "time_seconds": 1.7
+      },
+      {
+        "question_id": "142",
+        "question": "ما هو الحد الأدنى من الدراسة الذي يجب أن يكون الطالب قد أنهاه للتحويل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "142",
+          "168",
+          "163"
+        ],
+        "time_seconds": 1.65
+      },
+      {
+        "question_id": "143",
+        "question": "ما هي الحالة التي يجب أن يكون عليها الطالب في جامعته عند تقديم طلب التحويل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "143",
+          "111",
+          "147"
+        ],
+        "time_seconds": 1.79
+      },
+      {
+        "question_id": "144",
+        "question": "ما هو الحد الأقصى للمدة التي يجب ألا يكون قد مضى على دراسة الطالب في الجامعة المحول منها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "144",
+          "104",
+          "170"
+        ],
+        "time_seconds": 1.66
+      },
+      {
+        "question_id": "145",
+        "question": "ما هي النسبة التي يجب على الطالب دراستها في جامعة أم القرى بعد قبول تحويله؟",
+        "passed": true,
+        "retrieved_ids": [
+          "145",
+          "163",
+          "180"
+        ],
+        "time_seconds": 1.47
+      },
+      {
+        "question_id": "146",
+        "question": "ما هو الشرط المتعلق بالاعتراف بالجامعة أو الكلية المحول منها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "146",
+          "137",
+          "138"
+        ],
+        "time_seconds": 1.61
+      },
+      {
+        "question_id": "147",
+        "question": "كيف يتقدم الطالب بطلب معادلة المقررات الدراسية التي تم اجتيازها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "147",
+          "211",
+          "153"
+        ],
+        "time_seconds": 1.21
+      },
+      {
+        "question_id": "148",
+        "question": "متى لا يتم معادلة مقرر سبق دراسته في الجامعة المحول منها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "148",
+          "175",
+          "153"
+        ],
+        "time_seconds": 1.56
+      },
+      {
+        "question_id": "149",
+        "question": "ما هو الشرط المتعلق بالنسبة الموزونة للقبول عند تقديم طلب التحويل، وهل يجوز تخفيضها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "149",
+          "163",
+          "53"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "150",
+        "question": "ما هو الشرط المتعلق بشروط وضوابط القبول المقرة من مجلس الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "150",
+          "137",
+          "63"
+        ],
+        "time_seconds": 1.87
+      },
+      {
+        "question_id": "151",
+        "question": "هل يسمح للطالب بتغيير تخصصه الذي قبل عليه؟",
+        "passed": true,
+        "retrieved_ids": [
+          "151",
+          "55",
+          "58"
+        ],
+        "time_seconds": 4.98
+      },
+      {
+        "question_id": "152",
+        "question": "ما هي الشروط التي تطبق على الطلبة المحولين المقبولين ببرامج السنة الأولى؟",
+        "passed": true,
+        "retrieved_ids": [
+          "152",
+          "174",
+          "173"
+        ],
+        "time_seconds": 1.67
+      },
+      {
+        "question_id": "153",
+        "question": "من يملك صلاحية معادلة المقررات الدراسية التي سبق للطالب دراستها خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "153",
+          "250",
+          "147"
+        ],
+        "time_seconds": 1.85
+      },
+      {
+        "question_id": "154",
+        "question": "ما هي الدرجة التي ترصد للمقرر المعادل، وما هو الحد الأدنى لها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "154",
+          "54",
+          "44"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "155",
+        "question": "ما هو الحد الأقصى لنسبة المقررات الدراسية المعادلة للطالب من الخطة الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "54",
+          "155",
+          "180"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "156",
+        "question": "ما هو الحد الأدنى للتكافؤ المطلوب بين المقررات المعادلة ومفردات المقرر للطالب المحول من خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "178",
+          "156",
+          "186"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "157",
+        "question": "هل تعادل المقررات التي درسها الطالب زائراً في جامعة أم القرى قبل قبوله بها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "157",
+          "181",
+          "187"
+        ],
+        "time_seconds": 1.61
+      },
+      {
+        "question_id": "158",
+        "question": "هل يجوز للطالب المنسحب من جامعة أم القرى والحاصل على قبول جديد معادلة جميع المقررات التي درسها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "158",
+          "120",
+          "137"
+        ],
+        "time_seconds": 1.75
+      },
+      {
+        "question_id": "159",
+        "question": "ما هو الشرط المتعلق بوحدات المقرر المعادل مقارنة بالمقرر المعتمد في الخطة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "159",
+          "54",
+          "153"
+        ],
+        "time_seconds": 1.71
+      },
+      {
+        "question_id": "160",
+        "question": "ما هي ضوابط التحويل من كلية لأخرى أو من قسم لآخر داخل الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "160",
+          "162",
+          "139"
+        ],
+        "time_seconds": 1.78
+      },
+      {
+        "question_id": "161",
+        "question": "ما هو الشرط المتعلق بالدرجة الأكاديمية في التحويل بين التخصصات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "161",
+          "174",
+          "146"
+        ],
+        "time_seconds": 1.54
+      },
+      {
+        "question_id": "162",
+        "question": "متى يتم تحويل الطالب داخلياً بالنسبة للاختبارات والمقابلات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "162",
+          "140",
+          "174"
+        ],
+        "time_seconds": 1.79
+      },
+      {
+        "question_id": "163",
+        "question": "كيف يتم التحويل بناءً على النسبة الموزونة للقبول، وهل يجوز تخفيضها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "163",
+          "149",
+          "145"
+        ],
+        "time_seconds": 2.03
+      },
+      {
+        "question_id": "164",
+        "question": "هل يتاح التحويل للمرة الثانية، وما هي استثناءاته؟",
+        "passed": true,
+        "retrieved_ids": [
+          "164",
+          "163",
+          "160"
+        ],
+        "time_seconds": 1.7
+      },
+      {
+        "question_id": "165",
+        "question": "ما هي أسس مفاضلة التحويل بين الطلبة المتقدمين بعد تحقيق النسبة الموزونة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "165",
+          "149",
+          "163"
+        ],
+        "time_seconds": 1.65
+      },
+      {
+        "question_id": "166",
+        "question": "كيف يتاح التحويل داخل الكلية الواحدة للتخصصات المشاركة ببرنامج السنة الأولى والسنة التأهيلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "166",
+          "174",
+          "173"
+        ],
+        "time_seconds": 1.78
+      },
+      {
+        "question_id": "167",
+        "question": "ما هو الشرط المتعلق بوحدات الخطة الدراسية التي يجب ألا يتجاوزها الطالب عند طلب التحويل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "167",
+          "168",
+          "149"
+        ],
+        "time_seconds": 1.37
+      },
+      {
+        "question_id": "168",
+        "question": "ما هو الحد الأدنى لوحدات الخطة الدراسية التي يجب أن يكون الطالب قد درسها عند تقديم طلب التحويل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "168",
+          "142",
+          "167"
+        ],
+        "time_seconds": 1.85
+      },
+      {
+        "question_id": "169",
+        "question": "ما هي المدة القصوى للتحويل للطالب في مرحلة البكالوريوس؟",
+        "passed": true,
+        "retrieved_ids": [
+          "169",
+          "170",
+          "144"
+        ],
+        "time_seconds": 1.54
+      },
+      {
+        "question_id": "170",
+        "question": "ما هي المدة القصوى للتحويل للطالب في مرحلة الدبلوم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "170",
+          "169",
+          "162"
+        ],
+        "time_seconds": 4.73
+      },
+      {
+        "question_id": "171",
+        "question": "بناءً على ماذا يتم التحويل داخلياً؟",
+        "passed": true,
+        "retrieved_ids": [
+          "162",
+          "171",
+          "166"
+        ],
+        "time_seconds": 2.05
+      },
+      {
+        "question_id": "172",
+        "question": "من هم الطلبة الذين لا يشملهم التحويل الداخلي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "172",
+          "193",
+          "167"
+        ],
+        "time_seconds": 1.69
+      },
+      {
+        "question_id": "173",
+        "question": "هل يجوز للطالب ببرامج السنة الأولى والسنة التأهيلية طلب التحويل للمسار المناظر في المقر الرئيس أو كليات المحافظات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "173",
+          "174",
+          "32"
+        ],
+        "time_seconds": 1.76
+      },
+      {
+        "question_id": "174",
+        "question": "متى يجوز للطالب التحويل بين تخصصات الكليات المشاركة ببرنامج السنة الأولى والسنة التأهيلية للمسار المناظر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "174",
+          "173",
+          "32"
+        ],
+        "time_seconds": 1.7
+      },
+      {
+        "question_id": "175",
+        "question": "كيف تُثبت وتُحتسب المقررات الدراسية للطالب المحول داخلياً؟",
+        "passed": true,
+        "retrieved_ids": [
+          "175",
+          "179",
+          "176"
+        ],
+        "time_seconds": 2.44
+      },
+      {
+        "question_id": "176",
+        "question": "كيف تثبت المقررات التي اجتازها الطالب ولم تتم معادلتها، وهل تحتسب في المعدل التراكمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "176",
+          "177",
+          "23"
+        ],
+        "time_seconds": 1.71
+      },
+      {
+        "question_id": "177",
+        "question": "كيف تثبت المقررات التي لم يجتزها الطالب ولم تتم معادلتها، وهل تحتسب في المعدل التراكمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "176",
+          "177",
+          "23"
+        ],
+        "time_seconds": 1.61
+      },
+      {
+        "question_id": "178",
+        "question": "ما هو الحد الأدنى للتكافؤ المطلوب بين المقررات المعادلة ومفردات المقرر للطالب المحول داخل الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "178",
+          "156",
+          "186"
+        ],
+        "time_seconds": 1.69
+      },
+      {
+        "question_id": "179",
+        "question": "ما هو الشرط المتعلق بعدد وحدات المقرر الذي يدرسه الطالب المحول؟",
+        "passed": true,
+        "retrieved_ids": [
+          "179",
+          "141",
+          "175"
+        ],
+        "time_seconds": 2.11
+      },
+      {
+        "question_id": "180",
+        "question": "ما هي نسبة المقررات التي يجوز إعفاء الطالب من دراستها وما هو رمز التقدير؟",
+        "passed": true,
+        "retrieved_ids": [
+          "180",
+          "205",
+          "211"
+        ],
+        "time_seconds": 1.59
+      },
+      {
+        "question_id": "181",
+        "question": "ما هي ضوابط دراسة الطالب في جامعة أخرى كطالب زائر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "181",
+          "187",
+          "18"
+        ],
+        "time_seconds": 1.82
+      },
+      {
+        "question_id": "182",
+        "question": "ما هي الموافقات المطلوبة لدراسة الطالب كزائر في فرع من فروع الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "182",
+          "187",
+          "181"
+        ],
+        "time_seconds": 9.08
+      },
+      {
+        "question_id": "183",
+        "question": "كيف تتم معادلة المقررات للطالب الزائر في فروع الجامعة، وهل تدخل في المعدل التراكمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "183",
+          "23",
+          "177"
+        ],
+        "time_seconds": 2.05
+      },
+      {
+        "question_id": "184",
+        "question": "هل يجوز للطالب الزائر تسجيل المقررات في أكثر من فرع من فروع الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "184",
+          "188",
+          "215"
+        ],
+        "time_seconds": 5.93
+      },
+      {
+        "question_id": "185",
+        "question": "ما هو الحد الأقصى لوحدات ومتطلبات التخرج المسموح دراستها كطالب زائر خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "185",
+          "246",
+          "364"
+        ],
+        "time_seconds": 1.48
+      },
+      {
+        "question_id": "186",
+        "question": "ما هو الحد الأدنى للتكافؤ المطلوب بين المقررات المعادلة ومفردات المقرر للطالب الزائر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "178",
+          "186",
+          "156"
+        ],
+        "time_seconds": 1.5
+      },
+      {
+        "question_id": "187",
+        "question": "ما هي الموافقات المطلوبة لدراسة الطالب كطالب زائر خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "187",
+          "182",
+          "181"
+        ],
+        "time_seconds": 1.48
+      },
+      {
+        "question_id": "188",
+        "question": "هل يجوز للطالب تسجيل المقررات في أكثر من جامعة في الفصل الدراسي الواحد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "188",
+          "184",
+          "101"
+        ],
+        "time_seconds": 1.51
+      },
+      {
+        "question_id": "189",
+        "question": "ما هو الشرط المتعلق بعدد وحدات المقرر الذي يدرسه الطالب كزائر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "189",
+          "179",
+          "181"
+        ],
+        "time_seconds": 1.78
+      },
+      {
+        "question_id": "190",
+        "question": "كيف تثبت المقررات التي درسها الطالب كطالب زائر في السجل الأكاديمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "190",
+          "181",
+          "250"
+        ],
+        "time_seconds": 1.62
+      },
+      {
+        "question_id": "191",
+        "question": "ما الذي يتم الإشارة إليه في السجل الأكاديمي للطالب الذي أتم الدراسة كزائر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "191",
+          "181",
+          "184"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "192",
+        "question": "ما هو التزام الطالب بتزويد عمادة القبول والتسجيل بالنتائج، وما هو التقدير المرصود في حال عدم الالتزام؟",
+        "passed": true,
+        "retrieved_ids": [
+          "192",
+          "205",
+          "111"
+        ],
+        "time_seconds": 1.96
+      },
+      {
+        "question_id": "193",
+        "question": "ما هي البرامج التي لا يجوز للطالب دراستها كطالب زائر خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "193",
+          "181",
+          "187"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "194",
+        "question": "من يحدد آلية احتساب درجة الأعمال الفصلية والاختبار النهائي وأسلوب التقييم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "194",
+          "196",
+          "13"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "195",
+        "question": "متى يعقد الاختبار النهائي للمقرر الدراسي، وهل يجوز الاستثناء من ذلك؟",
+        "passed": false,
+        "retrieved_ids": [
+          "211",
+          "215",
+          "214"
+        ],
+        "time_seconds": 2.16
+      },
+      {
+        "question_id": "196",
+        "question": "ما هو الالتزام المطلوب بخصوص احتساب درجة الأعمال الفصلية والاختبار النهائي وأسلوب التقييم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "196",
+          "192",
+          "13"
+        ],
+        "time_seconds": 1.7
+      },
+      {
+        "question_id": "197",
+        "question": "متى يجب إبلاغ الطالب بدرجة الأعمال الفصلية؟",
+        "passed": false,
+        "retrieved_ids": [
+          "212",
+          "58",
+          "111"
+        ],
+        "time_seconds": 1.25
+      },
+      {
+        "question_id": "198",
+        "question": "ما الذي يجب أن يتضمنه التقويم الدراسي السنوي المعتمد من مجلس الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "198",
+          "68",
+          "31"
+        ],
+        "time_seconds": 1.55
+      },
+      {
+        "question_id": "199",
+        "question": "من يتولى تنظيم أعمال الاختبارات النهائية، وما هي المدة المحددة لرصد الدرجات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "203",
+          "199",
+          "229"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "200",
+        "question": "ما هي مهام اللجنة التي يشكلها مجلس الكلية لتنظيم أعمال الاختبارات النهائية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "200",
+          "199",
+          "194"
+        ],
+        "time_seconds": 1.51
+      },
+      {
+        "question_id": "201",
+        "question": "أين تسلم أوراق إجابات الاختبار النهائي للطلبة وكم مدة حفظها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "201",
+          "202",
+          "203"
+        ],
+        "time_seconds": 1.71
+      },
+      {
+        "question_id": "202",
+        "question": "كم مدة حفظ بيانات الإجابات الإلكترونية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "202",
+          "201",
+          "3"
+        ],
+        "time_seconds": 1.6
+      },
+      {
+        "question_id": "203",
+        "question": "ما هي المدة القصوى لرصد الدرجة النهائية للمقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "203",
+          "154",
+          "54"
+        ],
+        "time_seconds": 6.9
+      },
+      {
+        "question_id": "204",
+        "question": "ما هي الإجراءات المتبعة لتعديل الدرجة التي رصدت بالخطأ بعد اعتمادها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "204",
+          "91",
+          "233"
+        ],
+        "time_seconds": 1.67
+      },
+      {
+        "question_id": "205",
+        "question": "ما هو تقدير الطالب الغائب عن الاختبار النهائي بدون عذر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "205",
+          "206",
+          "79"
+        ],
+        "time_seconds": 1.81
+      },
+      {
+        "question_id": "206",
+        "question": "متى يجوز للطالب أداء اختبار بديل، وما هو التقدير الذي يحصل عليه؟",
+        "passed": true,
+        "retrieved_ids": [
+          "206",
+          "205",
+          "239"
+        ],
+        "time_seconds": 2.01
+      },
+      {
+        "question_id": "207",
+        "question": "إلى من يتقدم الطالب المتغيب عن الاختبار النهائي بعذره؟",
+        "passed": true,
+        "retrieved_ids": [
+          "207",
+          "79",
+          "210"
+        ],
+        "time_seconds": 1.75
+      },
+      {
+        "question_id": "208",
+        "question": "ما هي إجراءات الموافقة على الاختبار البديل وإبلاغ الطالب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "208",
+          "206",
+          "210"
+        ],
+        "time_seconds": 1.82
+      },
+      {
+        "question_id": "209",
+        "question": "ما هي أمثلة الأعذار المقبولة لعقد اختبار بديل للطالب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "209",
+          "206",
+          "208"
+        ],
+        "time_seconds": 1.56
+      },
+      {
+        "question_id": "210",
+        "question": "ما هو الإجراء المتبع إذا تغيب الطالب عن الاختبار البديل بدون عذر يقبله مجلس الكلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "210",
+          "83",
+          "206"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "211",
+        "question": "متى يجوز السماح للطالب باستكمال متطلبات مقرر دراسي لاحقاً، وما هو تقديره؟",
+        "passed": true,
+        "retrieved_ids": [
+          "211",
+          "216",
+          "180"
+        ],
+        "time_seconds": 1.8
+      },
+      {
+        "question_id": "212",
+        "question": "متى يجب صدور توصية مجلس القسم برصد تقدير غير مكتمل (ل) أو (IC) للطالب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "212",
+          "211",
+          "216"
+        ],
+        "time_seconds": 1.88
+      },
+      {
+        "question_id": "213",
+        "question": "ما هو الإجراء المتبع إذا أكمل الطالب متطلبات المقرر في الفترة المحددة لذلك؟",
+        "passed": true,
+        "retrieved_ids": [
+          "213",
+          "211",
+          "313"
+        ],
+        "time_seconds": 1.43
+      },
+      {
+        "question_id": "214",
+        "question": "هل يجوز للطالب إعادة تسجيل المقرر الذي حصل فيه على تقدير غير مكتمل (ل) أو (IC) قبل تعديل هذا التقدير؟",
+        "passed": true,
+        "retrieved_ids": [
+          "214",
+          "215",
+          "211"
+        ],
+        "time_seconds": 1.7
+      },
+      {
+        "question_id": "215",
+        "question": "هل يجوز للطالب تسجيل مقرر في فصل دراسي في حال كان متطلب هذا المقرر مرصوداً له تقدير غير مكتمل (ل) أو (IC)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "215",
+          "214",
+          "211"
+        ],
+        "time_seconds": 1.71
+      },
+      {
+        "question_id": "216",
+        "question": "متى يُرصد للطالب تقدير مستمر (م) أو (IP)، وماذا يحدث في حال عدم استكمال المقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "216",
+          "211",
+          "54"
+        ],
+        "time_seconds": 1.75
+      },
+      {
+        "question_id": "217",
+        "question": "ما هي القواعد التنفيذية التي تُطبق على تقدير غير مكتمل (ل) أو (IC) الوارد في هذه المادة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "217",
+          "265",
+          "211"
+        ],
+        "time_seconds": 1.92
+      },
+      {
+        "question_id": "218",
+        "question": "ما هي ضوابط اختبار الدور الثاني في نظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "218",
+          "219",
+          "224"
+        ],
+        "time_seconds": 1.51
+      },
+      {
+        "question_id": "219",
+        "question": "متى يعقد اختبار الدور الثاني لنظام السنة الدراسية الكاملة، وما هو الحد الأقصى لعدد وحدات رسوب الدور الثاني؟",
+        "passed": true,
+        "retrieved_ids": [
+          "219",
+          "220",
+          "218"
+        ],
+        "time_seconds": 1.98
+      },
+      {
+        "question_id": "220",
+        "question": "ما هو الإجراء المتبع إذا زاد مجموع عدد وحدات رسوب الطالب عن (50%) في الدور الأول لنظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "220",
+          "124",
+          "221"
+        ],
+        "time_seconds": 1.76
+      },
+      {
+        "question_id": "221",
+        "question": "ما هو الإجراء المتبع إذا رسب الطالب في الدور الثاني لنظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "221",
+          "220",
+          "124"
+        ],
+        "time_seconds": 5.44
+      },
+      {
+        "question_id": "222",
+        "question": "كيف تعدل درجة الرسوب في حال نجاح الطالب في الدور الثاني لنظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "222",
+          "226",
+          "220"
+        ],
+        "time_seconds": 1.61
+      },
+      {
+        "question_id": "223",
+        "question": "ما هو الإجراء المتبع في حال تغيب الطالب عن حضور اختبارات الدور الثاني لنظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "223",
+          "221",
+          "227"
+        ],
+        "time_seconds": 1.43
+      },
+      {
+        "question_id": "224",
+        "question": "من يجوز له وضع الإجراءات والضوابط الخاصة بالدور الثاني لنظام السنة الدراسية الكاملة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "224",
+          "228",
+          "221"
+        ],
+        "time_seconds": 1.45
+      },
+      {
+        "question_id": "225",
+        "question": "متى تعقد اختبارات الدور الثاني لبرامج السنة الأولى والسنة التأهيلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "225",
+          "228",
+          "219"
+        ],
+        "time_seconds": 1.62
+      },
+      {
+        "question_id": "226",
+        "question": "كيف تعدل درجة الرسوب في حال نجاح الطالب في الدور الثاني لبرامج السنة الأولى والسنة التأهيلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "226",
+          "222",
+          "255"
+        ],
+        "time_seconds": 1.64
+      },
+      {
+        "question_id": "227",
+        "question": "ما هو الإجراء المتبع في حال تغيب الطالب عن حضور اختبارات الدور الثاني لبرامج السنة الأولى والسنة التأهيلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "227",
+          "32",
+          "223"
+        ],
+        "time_seconds": 1.86
+      },
+      {
+        "question_id": "228",
+        "question": "من يجوز له وضع الإجراءات والضوابط الخاصة بالدور الثاني لبرامج السنة الأولى والسنة التأهيلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "228",
+          "173",
+          "174"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "229",
+        "question": "ما هي المدة المحددة للطالب للتظلم على الدرجة النهائية للمقرر الدراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "229",
+          "352",
+          "110"
+        ],
+        "time_seconds": 1.59
+      },
+      {
+        "question_id": "230",
+        "question": "متى يسقط حق الطالب في التظلم ومراجعة اختباره الفصلي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "230",
+          "229",
+          "110"
+        ],
+        "time_seconds": 1.49
+      },
+      {
+        "question_id": "231",
+        "question": "ما هي الإجراءات المتبعة في حالة عدم قناعة الطالب بالدرجة النهائية وتظلمه؟",
+        "passed": true,
+        "retrieved_ids": [
+          "231",
+          "318",
+          "111"
+        ],
+        "time_seconds": 1.42
+      },
+      {
+        "question_id": "232",
+        "question": "ما هي الفترة الزمنية القصوى المحددة لتعديل نتيجة الطالب في المقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "232",
+          "229",
+          "211"
+        ],
+        "time_seconds": 1.66
+      },
+      {
+        "question_id": "233",
+        "question": "ما الإجراء المتبع عند ملاحظة إجحاف أو تساهل مخل في نتائج المقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "233",
+          "71",
+          "213"
+        ],
+        "time_seconds": 1.75
+      },
+      {
+        "question_id": "234",
+        "question": "ما هو المعدل المطلوب للحصول على تقدير عام (ممتاز) عند التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "234",
+          "236",
+          "241"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "235",
+        "question": "ما هو المعدل المطلوب للحصول على تقدير عام (جيد جداً) عند التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "236",
+          "235",
+          "241"
+        ],
+        "time_seconds": 1.95
+      },
+      {
+        "question_id": "236",
+        "question": "ما هو المعدل المطلوب للحصول على تقدير عام (جيد) عند التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "236",
+          "235",
+          "241"
+        ],
+        "time_seconds": 1.59
+      },
+      {
+        "question_id": "237",
+        "question": "ما هو المعدل المطلوب للحصول على تقدير عام (مقبول) عند التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "237",
+          "241",
+          "236"
+        ],
+        "time_seconds": 2.18
+      },
+      {
+        "question_id": "238",
+        "question": "ما هو وزن التقدير الذي تطبقه الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "239",
+          "238",
+          "378"
+        ],
+        "time_seconds": 1.9
+      },
+      {
+        "question_id": "239",
+        "question": "كيف يتم احتساب التقدير العام عند التخرج بناءً على وزن التقدير (4.00)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "239",
+          "378",
+          "241"
+        ],
+        "time_seconds": 1.43
+      },
+      {
+        "question_id": "240",
+        "question": "كيف يتم احتساب التقديرات التي يحصل عليها الطالب في كل مقرر دراسي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "240",
+          "211",
+          "216"
+        ],
+        "time_seconds": 6.29
+      },
+      {
+        "question_id": "241",
+        "question": "ما هي المعدلات المطلوبة لمنح مرتبة الشرف الأولى والثانية عند التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "241",
+          "242",
+          "237"
+        ],
+        "time_seconds": 2.05
+      },
+      {
+        "question_id": "242",
+        "question": "ما هي شروط الحصول على مرتبة الشرف الأولى أو الثانية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "242",
+          "241",
+          "244"
+        ],
+        "time_seconds": 1.56
+      },
+      {
+        "question_id": "243",
+        "question": "كيف يُعامل الحرمان والرسوب في المقررات الاجتيازية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "243",
+          "79",
+          "80"
+        ],
+        "time_seconds": 1.6
+      },
+      {
+        "question_id": "244",
+        "question": "كيف تُعرّف المدة الدراسية المستحقة لمرتبة الشرف؟",
+        "passed": true,
+        "retrieved_ids": [
+          "244",
+          "241",
+          "242"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "245",
+        "question": "هل يجوز لمجلس الجامعة تقديم نظام تقديرات مختلف؟",
+        "passed": true,
+        "retrieved_ids": [
+          "245",
+          "180",
+          "194"
+        ],
+        "time_seconds": 2.11
+      },
+      {
+        "question_id": "246",
+        "question": "متى يتخرج الطالب، وما هو الحد الأدنى لمعدله التراكمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "246",
+          "252",
+          "247"
+        ],
+        "time_seconds": 1.65
+      },
+      {
+        "question_id": "247",
+        "question": "ما هو الحد الأدنى للمعدل التراكمي للتخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "252",
+          "247",
+          "246"
+        ],
+        "time_seconds": 1.96
+      },
+      {
+        "question_id": "248",
+        "question": "من هي الجهة المسؤولة عن إعداد وإصدار وثائق وشهادات التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "248",
+          "39",
+          "68"
+        ],
+        "time_seconds": 1.9
+      },
+      {
+        "question_id": "249",
+        "question": "ما هو الإجراء المتبع في حال نجاح الطالب في المقررات ورسوبه في المعدل التراكمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "249",
+          "255",
+          "221"
+        ],
+        "time_seconds": 1.45
+      },
+      {
+        "question_id": "250",
+        "question": "هل يمكن للطالب إعادة بعض المقررات بعد إنهاء ساعات الخطة لرفع معدله؟",
+        "passed": true,
+        "retrieved_ids": [
+          "250",
+          "119",
+          "54"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "251",
+        "question": "ما هو الحد الأقصى لساعات المقررات التي يمكن إعادتها لرفع المعدل التراكمي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "251",
+          "203",
+          "250"
+        ],
+        "time_seconds": 2.17
+      },
+      {
+        "question_id": "252",
+        "question": "ما هو الحد الأقصى للمعدل التراكمي الذي يحصل عليه الطالب بعد الإعادة لغرض التخرج؟",
+        "passed": true,
+        "retrieved_ids": [
+          "252",
+          "246",
+          "247"
+        ],
+        "time_seconds": 1.96
+      },
+      {
+        "question_id": "253",
+        "question": "من يختص بتحديد المقررات التي يعيدها الطالب لرفع معدله، وما هي المدة المتاحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "211",
+          "250",
+          "253"
+        ],
+        "time_seconds": 2.14
+      },
+      {
+        "question_id": "254",
+        "question": "كيف يُرصد تقدير المقرر الذي أعاد الطالب دراسته بنجاح؟",
+        "passed": true,
+        "retrieved_ids": [
+          "254",
+          "255",
+          "216"
+        ],
+        "time_seconds": 2.07
+      },
+      {
+        "question_id": "255",
+        "question": "ماذا يُرصد للطالب في حال رسوبه في المقرر الذي أعاد دراسته لرفع المعدل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "255",
+          "216",
+          "250"
+        ],
+        "time_seconds": 2.65
+      },
+      {
+        "question_id": "256",
+        "question": "هل يسمح للطالب بالتأجيل أو الاعتذار خلال فترة إعادة المقررات لرفع المعدل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "256",
+          "110",
+          "250"
+        ],
+        "time_seconds": 5.22
+      },
+      {
+        "question_id": "257",
+        "question": "بماذا تلتزم الجامعة لضمان جودة العملية التعليمية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "257",
+          "260",
+          "339"
+        ],
+        "time_seconds": 1.94
+      },
+      {
+        "question_id": "258",
+        "question": "ما هو دور الجامعة في رفع كفاءة الطلبة قبل التخرج؟",
+        "passed": false,
+        "retrieved_ids": [
+          "343",
+          "250",
+          "333"
+        ],
+        "time_seconds": 1.86
+      },
+      {
+        "question_id": "259",
+        "question": "هل يجوز لمجلس الجامعة تغيير المدد الزمنية المحددة في المادة الأولى؟",
+        "passed": false,
+        "retrieved_ids": [
+          "68",
+          "232",
+          "3"
+        ],
+        "time_seconds": 1.99
+      },
+      {
+        "question_id": "260",
+        "question": "من يضع ضوابط القبول بما يتيح التعليم العالي للجميع؟",
+        "passed": true,
+        "retrieved_ids": [
+          "260",
+          "137",
+          "63"
+        ],
+        "time_seconds": 1.49
+      },
+      {
+        "question_id": "261",
+        "question": "هل يجوز لمجلس الجامعة إقرار برنامج مشترك مع مؤسسة تعليمية خارج المملكة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "261",
+          "49",
+          "72"
+        ],
+        "time_seconds": 1.62
+      },
+      {
+        "question_id": "262",
+        "question": "ما هي صلاحيات مجلس الجامعة بخصوص الطلبة الموهوبين والمتميزين؟",
+        "passed": false,
+        "retrieved_ids": [
+          "368",
+          "273",
+          "153"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "263",
+        "question": "هل تتاح الفرصة لطلاب الثانوية العامة بدراسة مقررات في الجامعة؟",
+        "passed": false,
+        "retrieved_ids": [
+          "250",
+          "249",
+          "72"
+        ],
+        "time_seconds": 1.92
+      },
+      {
+        "question_id": "264",
+        "question": "من يقر قواعد السلوك والانضباط الطلابي في الجامعة؟",
+        "passed": false,
+        "retrieved_ids": [
+          "317",
+          "322",
+          "280"
+        ],
+        "time_seconds": 1.7
+      },
+      {
+        "question_id": "265",
+        "question": "من يقر القواعد التنفيذية لهذه اللائحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "265",
+          "217",
+          "266"
+        ],
+        "time_seconds": 1.51
+      },
+      {
+        "question_id": "266",
+        "question": "من يملك حق تفسير هذه اللائحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "266",
+          "265",
+          "27"
+        ],
+        "time_seconds": 1.46
+      },
+      {
+        "question_id": "267",
+        "question": "ما الذي يحل محل اللوائح السابقة وماذا تلغي هذه اللائحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "267",
+          "27",
+          "268"
+        ],
+        "time_seconds": 2.04
+      },
+      {
+        "question_id": "268",
+        "question": "متى يبدأ العمل بهذه اللائحة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "268",
+          "27",
+          "5"
+        ],
+        "time_seconds": 1.44
+      },
+      {
+        "question_id": "269",
+        "question": "ما هو تعريف مرافق الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "269",
+          "324",
+          "343"
+        ],
+        "time_seconds": 1.88
+      },
+      {
+        "question_id": "270",
+        "question": "ما هو تعريف ممتلكات الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "270",
+          "324",
+          "307"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "271",
+        "question": "ما هو تعريف المخالفة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "310",
+          "308",
+          "271"
+        ],
+        "time_seconds": 2.43
+      },
+      {
+        "question_id": "272",
+        "question": "ما هو تعريف العقوبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "272",
+          "312",
+          "313"
+        ],
+        "time_seconds": 1.67
+      },
+      {
+        "question_id": "273",
+        "question": "من هو صاحب الصلاحية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "273",
+          "368",
+          "366"
+        ],
+        "time_seconds": 1.38
+      },
+      {
+        "question_id": "274",
+        "question": "ما هي لجنة الانضباط الطلابي؟",
+        "passed": false,
+        "retrieved_ids": [
+          "284",
+          "285",
+          "300"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "275",
+        "question": "ما هي أهداف اللائحة المتعلقة بتقويم السلوك والحد من المخالفات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "275",
+          "26",
+          "279"
+        ],
+        "time_seconds": 5.72
+      },
+      {
+        "question_id": "276",
+        "question": "ما هو نطاق ضبط السلوك الطلابي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "276",
+          "299",
+          "295"
+        ],
+        "time_seconds": 1.75
+      },
+      {
+        "question_id": "277",
+        "question": "ما هي الثقافة التي يتم تطبيقها للحد من المخالفات السلوكية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "277",
+          "308",
+          "309"
+        ],
+        "time_seconds": 1.39
+      },
+      {
+        "question_id": "278",
+        "question": "كيف يهدف النظام لتعزيز الانضباط الذاتي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "278",
+          "279",
+          "288"
+        ],
+        "time_seconds": 1.55
+      },
+      {
+        "question_id": "279",
+        "question": "ما هو الهدف من بيان قواعد السلوك للطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "279",
+          "278",
+          "275"
+        ],
+        "time_seconds": 1.44
+      },
+      {
+        "question_id": "280",
+        "question": "متى وأين تُطبق هذه القواعد على مخالفات الطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "280",
+          "281",
+          "282"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "281",
+        "question": "هل تطبق القواعد على المخالفات الشخصية خارج الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "281",
+          "282",
+          "309"
+        ],
+        "time_seconds": 1.63
+      },
+      {
+        "question_id": "282",
+        "question": "ما الإجراء المتبع عند وجود شبهة جنائية في المخالفة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "282",
+          "313",
+          "318"
+        ],
+        "time_seconds": 1.32
+      },
+      {
+        "question_id": "283",
+        "question": "هل يخل تطبيق العقوبات بالاختصاصات الخارجية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "283",
+          "319",
+          "312"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "284",
+        "question": "مما تشكل اللجنة الدائمة للانضباط الطلابي (للطلاب)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "284",
+          "285",
+          "300"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "285",
+        "question": "مما تشكل اللجنة الدائمة للانضباط الطلابي (للطالبات)؟",
+        "passed": true,
+        "retrieved_ids": [
+          "285",
+          "284",
+          "300"
+        ],
+        "time_seconds": 1.62
+      },
+      {
+        "question_id": "286",
+        "question": "هل يحق للمستعان بهم التصويت على قرارات اللجنة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "286",
+          "375",
+          "293"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "287",
+        "question": "ماذا يحدث عند انتهاء مدة عمل اللجنة قبل إعادة تشكيلها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "287",
+          "369",
+          "373"
+        ],
+        "time_seconds": 1.47
+      },
+      {
+        "question_id": "288",
+        "question": "ما هي اختصاصات لجنة الانضباط الطلابي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "288",
+          "284",
+          "285"
+        ],
+        "time_seconds": 2.18
+      },
+      {
+        "question_id": "289",
+        "question": "متى تعقد اللجنة اجتماعاتها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "289",
+          "375",
+          "369"
+        ],
+        "time_seconds": 1.96
+      },
+      {
+        "question_id": "290",
+        "question": "من يترأس اجتماعات اللجنة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "290",
+          "373",
+          "366"
+        ],
+        "time_seconds": 1.93
+      },
+      {
+        "question_id": "291",
+        "question": "ما هي شروط صحة اجتماع اللجنة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "291",
+          "375",
+          "290"
+        ],
+        "time_seconds": 1.76
+      },
+      {
+        "question_id": "292",
+        "question": "كيف تصدر قرارات اللجنة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "375",
+          "292",
+          "376"
+        ],
+        "time_seconds": 1.44
+      },
+      {
+        "question_id": "293",
+        "question": "هل يحق لعضو اللجنة الاعتراض على القرارات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "293",
+          "371",
+          "370"
+        ],
+        "time_seconds": 1.51
+      },
+      {
+        "question_id": "294",
+        "question": "من يتولى المراجعة النظامية على محاضر اللجان؟",
+        "passed": true,
+        "retrieved_ids": [
+          "294",
+          "302",
+          "233"
+        ],
+        "time_seconds": 5.77
+      },
+      {
+        "question_id": "295",
+        "question": "ما هو حق الطالب في الدفاع عن نفسه أمام اللجنة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "295",
+          "347",
+          "368"
+        ],
+        "time_seconds": 1.75
+      },
+      {
+        "question_id": "296",
+        "question": "ما هو الالتزام المفروض على عضو اللجنة بخصوص المعلومات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "296",
+          "47",
+          "291"
+        ],
+        "time_seconds": 1.71
+      },
+      {
+        "question_id": "297",
+        "question": "ما هي المدة المحددة للبت في المخالفات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "297",
+          "369",
+          "83"
+        ],
+        "time_seconds": 1.44
+      },
+      {
+        "question_id": "298",
+        "question": "ما هو الإجراء عند وجود تعارض مصالح لعضو اللجنة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "298",
+          "291",
+          "293"
+        ],
+        "time_seconds": 1.59
+      },
+      {
+        "question_id": "299",
+        "question": "ما هي مهام عمادة شؤون الطلاب في تنفيذ هذه القواعد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "299",
+          "288",
+          "372"
+        ],
+        "time_seconds": 1.43
+      },
+      {
+        "question_id": "300",
+        "question": "مما تشكل اللجنة العليا الدائمة للانضباط الطلابي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "284",
+          "285",
+          "300"
+        ],
+        "time_seconds": 1.91
+      },
+      {
+        "question_id": "301",
+        "question": "ما هو اختصاص اللجنة العليا الدائمة للانضباط الطلابي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "284",
+          "301",
+          "285"
+        ],
+        "time_seconds": 1.86
+      },
+      {
+        "question_id": "302",
+        "question": "من يتولى المراجعة النظامية لقرارات اللجنة العليا؟",
+        "passed": true,
+        "retrieved_ids": [
+          "376",
+          "302",
+          "375"
+        ],
+        "time_seconds": 1.82
+      },
+      {
+        "question_id": "306",
+        "question": "ما هي المخالفات العامة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "306",
+          "310",
+          "309"
+        ],
+        "time_seconds": 1.42
+      },
+      {
+        "question_id": "307",
+        "question": "ما هي المخالفات تجاه الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "307",
+          "308",
+          "306"
+        ],
+        "time_seconds": 1.5
+      },
+      {
+        "question_id": "308",
+        "question": "ما هي أمثلة المخالفات تجاه الغير؟",
+        "passed": true,
+        "retrieved_ids": [
+          "308",
+          "309",
+          "310"
+        ],
+        "time_seconds": 1.32
+      },
+      {
+        "question_id": "309",
+        "question": "ما هي أمثلة المخالفات الأكاديمية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "309",
+          "308",
+          "307"
+        ],
+        "time_seconds": 1.65
+      },
+      {
+        "question_id": "310",
+        "question": "ما هي أمثلة المخالفات التقنية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "310",
+          "308",
+          "309"
+        ],
+        "time_seconds": 1.62
+      },
+      {
+        "question_id": "311",
+        "question": "هل يمكن إضافة مخالفات أخرى؟",
+        "passed": true,
+        "retrieved_ids": [
+          "311",
+          "310",
+          "306"
+        ],
+        "time_seconds": 1.36
+      },
+      {
+        "question_id": "312",
+        "question": "ما هي العقوبات المقررة على مرتكبي المخالفات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "312",
+          "313",
+          "310"
+        ],
+        "time_seconds": 1.49
+      },
+      {
+        "question_id": "313",
+        "question": "هل يجوز وقف تنفيذ العقوبة الصادرة بحق الطالب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "313",
+          "318",
+          "358"
+        ],
+        "time_seconds": 1.42
+      },
+      {
+        "question_id": "314",
+        "question": "هل يمكن استبدال العقوبة ببدائل أخرى؟",
+        "passed": true,
+        "retrieved_ids": [
+          "314",
+          "312",
+          "313"
+        ],
+        "time_seconds": 2.5
+      },
+      {
+        "question_id": "315",
+        "question": "ما هو وضع القرارات النهائية الصادرة من لجان الانضباط الطلابي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "315",
+          "292",
+          "318"
+        ],
+        "time_seconds": 1.43
+      },
+      {
+        "question_id": "316",
+        "question": "ما هي المدة المتاحة للطلبة للاعتراض على قرارات لجنة الانضباط؟",
+        "passed": true,
+        "retrieved_ids": [
+          "316",
+          "371",
+          "369"
+        ],
+        "time_seconds": 1.68
+      },
+      {
+        "question_id": "317",
+        "question": "كيف يتم تزويد الطلبة بنسخة من هذه القواعد؟ هل يعتد بجهل الطالب بقواعد الانضباط؟",
+        "passed": true,
+        "retrieved_ids": [
+          "317",
+          "322",
+          "318"
+        ],
+        "time_seconds": 1.81
+      },
+      {
+        "question_id": "318",
+        "question": "هل يجوز للطالب المحال للتحقيق الانسحاب من الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "318",
+          "101",
+          "94"
+        ],
+        "time_seconds": 1.9
+      },
+      {
+        "question_id": "319",
+        "question": "من هي الجهات المختصة بتنفيذ الإجراءات اللازمة بعد إبلاغها بقرار العقوبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "319",
+          "320",
+          "313"
+        ],
+        "time_seconds": 1.89
+      },
+      {
+        "question_id": "320",
+        "question": "ما هي مسؤولية إدارة الأمن والسلامة، وماذا عن تقارير الطلاب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "320",
+          "319",
+          "299"
+        ],
+        "time_seconds": 1.39
+      },
+      {
+        "question_id": "321",
+        "question": "ماذا يحدث للقرارات واللوائح السابقة التي تتعارض مع هذه القواعد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "321",
+          "323",
+          "377"
+        ],
+        "time_seconds": 1.39
+      },
+      {
+        "question_id": "322",
+        "question": "متى يُعمل بهذه القواعد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "265",
+          "280",
+          "322"
+        ],
+        "time_seconds": 1.41
+      },
+      {
+        "question_id": "323",
+        "question": "هل يسري على هذه القواعد أي تعديل يطرأ على نظام مجلس التعليم العالي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "323",
+          "377",
+          "27"
+        ],
+        "time_seconds": 1.33
+      },
+      {
+        "question_id": "324",
+        "question": "ما هو تعريف الجامعة في هذه القواعد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "324",
+          "325",
+          "269"
+        ],
+        "time_seconds": 1.47
+      },
+      {
+        "question_id": "325",
+        "question": "ماذا يُقصد بجهات الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "307",
+          "325",
+          "306"
+        ],
+        "time_seconds": 1.46
+      },
+      {
+        "question_id": "326",
+        "question": "من هم الطلبة الذين تشملهم هذه القواعد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "326",
+          "332",
+          "327"
+        ],
+        "time_seconds": 1.38
+      },
+      {
+        "question_id": "327",
+        "question": "من هم منسوبو الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "327",
+          "261",
+          "269"
+        ],
+        "time_seconds": 1.37
+      },
+      {
+        "question_id": "328",
+        "question": "ما هو تعريف التظلم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "328",
+          "308",
+          "271"
+        ],
+        "time_seconds": 1.33
+      },
+      {
+        "question_id": "329",
+        "question": "ما هي اللجنة المحايدة وكيف تُشكل؟",
+        "passed": true,
+        "retrieved_ids": [
+          "329",
+          "366",
+          "375"
+        ],
+        "time_seconds": 1.41
+      },
+      {
+        "question_id": "330",
+        "question": "ما هي اللجنة الدائمة لحماية حقوق الطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "331",
+          "330",
+          "372"
+        ],
+        "time_seconds": 1.53
+      },
+      {
+        "question_id": "331",
+        "question": "ما هي اللجنة الدائمة العليا لحماية حقوق الطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "331",
+          "330",
+          "372"
+        ],
+        "time_seconds": 1.42
+      },
+      {
+        "question_id": "332",
+        "question": "ما هو تعريف الاعتراض؟",
+        "passed": true,
+        "retrieved_ids": [
+          "332",
+          "316",
+          "363"
+        ],
+        "time_seconds": 1.54
+      },
+      {
+        "question_id": "333",
+        "question": "ما هو الهدف الأساسي من قواعد حقوق الطلبة في الجامعة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "333",
+          "334",
+          "335"
+        ],
+        "time_seconds": 1.4
+      },
+      {
+        "question_id": "334",
+        "question": "ما هي حقوق الطالب المتعلقة بالخطط والجداول الدراسية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "334",
+          "335",
+          "346"
+        ],
+        "time_seconds": 1.35
+      },
+      {
+        "question_id": "335",
+        "question": "ما هو حق الطالب في تنفيذ الإجراءات الأكاديمية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "119",
+          "110",
+          "335"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "336",
+        "question": "ما هي حدود الاستفسار والمناقشة العلمية اللائقة مع أعضاء هيئة التدريس؟",
+        "passed": true,
+        "retrieved_ids": [
+          "336",
+          "72",
+          "103"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "337",
+        "question": "ما هو حق الطالب في إجراء الاختبارات، ومتى يجب إعلامه بالحرمان؟",
+        "passed": true,
+        "retrieved_ids": [
+          "337",
+          "79",
+          "78"
+        ],
+        "time_seconds": 1.46
+      },
+      {
+        "question_id": "338",
+        "question": "ما هي المدة الكافية لإبلاغ الطالب بموعد الاختبار البديل أو اختبار الدور الثاني؟",
+        "passed": true,
+        "retrieved_ids": [
+          "338",
+          "208",
+          "206"
+        ],
+        "time_seconds": 1.35
+      },
+      {
+        "question_id": "339",
+        "question": "ما هي التزامات أعضاء هيئة التدريس تجاه أسئلة الاختبارات ومدتها وتوزيع الدرجات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "339",
+          "199",
+          "200"
+        ],
+        "time_seconds": 1.49
+      },
+      {
+        "question_id": "340",
+        "question": "ما هو حق الطالب في معرفة الإجابة النموذجية ونتيجته في الاختبارات الفصلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "340",
+          "255",
+          "18"
+        ],
+        "time_seconds": 1.48
+      },
+      {
+        "question_id": "341",
+        "question": "ما هو حق الطالب في مراجعة إجابته في الاختبار النهائي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "205",
+          "341",
+          "206"
+        ],
+        "time_seconds": 1.73
+      },
+      {
+        "question_id": "342",
+        "question": "ما هو حق الطالب في الرعاية الصحية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "342",
+          "346",
+          "349"
+        ],
+        "time_seconds": 1.77
+      },
+      {
+        "question_id": "343",
+        "question": "ما هي مرافق الجامعة التي يحق للطالب الاستفادة منها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "343",
+          "269",
+          "181"
+        ],
+        "time_seconds": 2.02
+      },
+      {
+        "question_id": "344",
+        "question": "ما هو حق الطالب في الحصول على المزايا المالية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "344",
+          "181",
+          "340"
+        ],
+        "time_seconds": 1.37
+      },
+      {
+        "question_id": "345",
+        "question": "ما هي الأنشطة والبرامج التي يحق للطالب المشاركة فيها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "345",
+          "181",
+          "48"
+        ],
+        "time_seconds": 1.38
+      },
+      {
+        "question_id": "346",
+        "question": "ما هو حق الطالب في الشكوى والتظلم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "346",
+          "353",
+          "348"
+        ],
+        "time_seconds": 1.49
+      },
+      {
+        "question_id": "347",
+        "question": "ما هو حق الطالب في الدفاع عن نفسه قبل صدور العقوبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "347",
+          "346",
+          "337"
+        ],
+        "time_seconds": 1.46
+      },
+      {
+        "question_id": "348",
+        "question": "ما هو حق الطالب تجاه القرار التأديبي الصادر ضده؟",
+        "passed": true,
+        "retrieved_ids": [
+          "348",
+          "363",
+          "313"
+        ],
+        "time_seconds": 1.57
+      },
+      {
+        "question_id": "349",
+        "question": "ما هو حق الطالب من ذوي الاحتياجات الخاصة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "349",
+          "181",
+          "340"
+        ],
+        "time_seconds": 1.35
+      },
+      {
+        "question_id": "350",
+        "question": "متى يجوز إيقاع أي عقوبة على الطالب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "313",
+          "350",
+          "318"
+        ],
+        "time_seconds": 1.41
+      },
+      {
+        "question_id": "351",
+        "question": "ما هو حق اللجان المختصة تجاه المستندات المتعلقة بالموضوعات التي تنظرها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "351",
+          "368",
+          "374"
+        ],
+        "time_seconds": 1.44
+      },
+      {
+        "question_id": "352",
+        "question": "ما هي المدة المحددة لرفع التظلم للقسم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "352",
+          "229",
+          "369"
+        ],
+        "time_seconds": 1.55
+      },
+      {
+        "question_id": "353",
+        "question": "هل يحق للطالب التظلم بخصوص الحرمان من دخول الاختبار النهائي أو على درجة مقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "79",
+          "78",
+          "353"
+        ],
+        "time_seconds": 1.4
+      },
+      {
+        "question_id": "354",
+        "question": "ما هي الخطوة الأولى للطالب الذي يرغب في التظلم بخصوص الحرمان من دخول الاختبار أو التظلم على درجة مقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "354",
+          "353",
+          "78"
+        ],
+        "time_seconds": 1.42
+      },
+      {
+        "question_id": "355",
+        "question": "ما هي الخطوة التالية في حال عدم تجاوب أستاذ المقرر أو عدم قناعة الطالب برده؟",
+        "passed": true,
+        "retrieved_ids": [
+          "355",
+          "358",
+          "313"
+        ],
+        "time_seconds": 1.37
+      },
+      {
+        "question_id": "356",
+        "question": "ما هو إجراء رئيس القسم بعد استلام التظلم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "356",
+          "365",
+          "360"
+        ],
+        "time_seconds": 1.31
+      },
+      {
+        "question_id": "357",
+        "question": "ما هو الإجراء في حال اتضاح صحة التظلم أو عدم صحته؟",
+        "passed": true,
+        "retrieved_ids": [
+          "357",
+          "360",
+          "231"
+        ],
+        "time_seconds": 1.36
+      },
+      {
+        "question_id": "358",
+        "question": "ما هي الخطوة المتاحة للطالب إذا لم يرضَ برد رئيس القسم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "358",
+          "356",
+          "58"
+        ],
+        "time_seconds": 1.35
+      },
+      {
+        "question_id": "359",
+        "question": "ما الإجراء المتبع بعد تصعيد الطالب تظلمه إلى عميد الكلية؟",
+        "passed": true,
+        "retrieved_ids": [
+          "359",
+          "360",
+          "356"
+        ],
+        "time_seconds": 1.38
+      },
+      {
+        "question_id": "360",
+        "question": "ما هو الإجراء الذي يتبعه عميد الكلية في حال ثبوت صحة التظلم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "360",
+          "357",
+          "356"
+        ],
+        "time_seconds": 1.41
+      },
+      {
+        "question_id": "361",
+        "question": "متى يتم تصعيد التظلم إلى قسم الحماية والتأديب؟",
+        "passed": true,
+        "retrieved_ids": [
+          "361",
+          "362",
+          "356"
+        ],
+        "time_seconds": 1.31
+      },
+      {
+        "question_id": "362",
+        "question": "متى يتم تحويل طلب التظلم إلى قسم الحماية والتأديب بشكل تلقائي؟",
+        "passed": true,
+        "retrieved_ids": [
+          "362",
+          "356",
+          "361"
+        ],
+        "time_seconds": 1.38
+      },
+      {
+        "question_id": "363",
+        "question": "ما هو مرجع البت في اعتراض أستاذ المقرر على قرار اللجنة المحايدة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "363",
+          "329",
+          "369"
+        ],
+        "time_seconds": 1.31
+      },
+      {
+        "question_id": "364",
+        "question": "ما هو الحد الأقصى لطلبات التظلم على درجة مقرر؟",
+        "passed": true,
+        "retrieved_ids": [
+          "364",
+          "352",
+          "360"
+        ],
+        "time_seconds": 1.38
+      },
+      {
+        "question_id": "365",
+        "question": "ما هو الإجراء المتبع إذا كان رئيس القسم أو عميد الكلية طرفاً في التظلم؟",
+        "passed": true,
+        "retrieved_ids": [
+          "365",
+          "356",
+          "360"
+        ],
+        "time_seconds": 1.2
+      },
+      {
+        "question_id": "366",
+        "question": "كيف تُشكل اللجنة الدائمة لحقوق الطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "366",
+          "372",
+          "373"
+        ],
+        "time_seconds": 1.37
+      },
+      {
+        "question_id": "367",
+        "question": "ما هي اختصاصات اللجنة الدائمة لحقوق الطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "374",
+          "367",
+          "372"
+        ],
+        "time_seconds": 1.74
+      },
+      {
+        "question_id": "368",
+        "question": "ما هي صلاحيات اللجنة في طلب حضور الأطراف وجمع المستندات؟",
+        "passed": true,
+        "retrieved_ids": [
+          "368",
+          "375",
+          "351"
+        ],
+        "time_seconds": 2.03
+      },
+      {
+        "question_id": "369",
+        "question": "ما هي المدة المحددة لبت اللجنة في التظلمات ومتى تصبح قراراتها نافذة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "369",
+          "297",
+          "287"
+        ],
+        "time_seconds": 1.46
+      },
+      {
+        "question_id": "370",
+        "question": "ما هي أنواع القرارات التي تصدرها اللجنة الدائمة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "370",
+          "371",
+          "366"
+        ],
+        "time_seconds": 1.4
+      },
+      {
+        "question_id": "371",
+        "question": "هل قرارات لجنة حماية حقوق الطلبة ملزمة، وكم مدة الاعتراض عليها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "371",
+          "316",
+          "363"
+        ],
+        "time_seconds": 1.31
+      },
+      {
+        "question_id": "372",
+        "question": "من يتولى متابعة تنفيذ القرارات الصادرة عن اللجنة الدائمة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "366",
+          "376",
+          "372"
+        ],
+        "time_seconds": 1.38
+      },
+      {
+        "question_id": "373",
+        "question": "ممن تُشكل اللجنة الدائمة العليا لحقوق الطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "366",
+          "372",
+          "373"
+        ],
+        "time_seconds": 1.36
+      },
+      {
+        "question_id": "374",
+        "question": "ما هي اختصاصات اللجنة الدائمة العليا لحقوق الطلبة؟",
+        "passed": true,
+        "retrieved_ids": [
+          "374",
+          "367",
+          "372"
+        ],
+        "time_seconds": 1.5
+      },
+      {
+        "question_id": "375",
+        "question": "ما هي ضوابط انعقاد اللجنة العليا وكيف تصدر قراراتها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "375",
+          "373",
+          "376"
+        ],
+        "time_seconds": 2.29
+      },
+      {
+        "question_id": "376",
+        "question": "من يتولى متابعة تنفيذ القرارات الصادرة عن اللجنة العليا؟",
+        "passed": true,
+        "retrieved_ids": [
+          "376",
+          "372",
+          "375"
+        ],
+        "time_seconds": 1.33
+      },
+      {
+        "question_id": "377",
+        "question": "هل تسري التعديلات على نظام مجلس التعليم والجامعات تلقائياً على هذه القواعد؟",
+        "passed": true,
+        "retrieved_ids": [
+          "377",
+          "323",
+          "259"
+        ],
+        "time_seconds": 1.49
+      },
+      {
+        "question_id": "378",
+        "question": "ما هي التقديرات ورموزها وأوزانها والدرجات المئوية المقابلة لها؟",
+        "passed": true,
+        "retrieved_ids": [
+          "379",
+          "378",
+          "19"
+        ],
+        "time_seconds": 1.34
+      },
+      {
+        "question_id": "379",
+        "question": "ما هي رموز التقديرات الخاصة مثل مستمر وغير مكتمل ومحروم وناجح دون درجة ومنسحب بعذر ومعفى؟",
+        "passed": true,
+        "retrieved_ids": [
+          "379",
+          "378",
+          "21"
+        ],
+        "time_seconds": 1.52
+      },
+      {
+        "question_id": "380",
+        "question": "متى يتم تسكين الطالب في التخصص الدقيق؟",
+        "passed": true,
+        "retrieved_ids": [
+          "380",
+          "119",
+          "110"
+        ],
+        "time_seconds": 1.38
+      }
+    ],
+    "chatbot_layer": [
+      {
+        "message": "هل أقدر أسجل CS2105؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "eligibility_check",
+        "actual_agent": "study_plan",
+        "actual_intent": "eligibility_check",
+        "time_seconds": 4.52
+      },
+      {
+        "message": "هل استطيع تسجيل CS2105؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "eligibility_check",
+        "actual_agent": "study_plan",
+        "actual_intent": "eligibility_check",
+        "time_seconds": 4.11
+      },
+      {
+        "message": "هل مسموح لي أسجل CS2105؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "eligibility_check",
+        "actual_agent": "study_plan",
+        "actual_intent": "eligibility_check",
+        "time_seconds": 3.49
+      },
+      {
+        "message": "كم معدلي التراكمي؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "gpa_summary",
+        "actual_agent": "study_plan",
+        "actual_intent": "gpa_summary",
+        "time_seconds": 2.29
+      },
+      {
+        "message": "اعطني ملخص المعدل",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "gpa_summary",
+        "actual_agent": "study_plan",
+        "actual_intent": "gpa_summary",
+        "time_seconds": 2.78
+      },
+      {
+        "message": "كم ساعة باقي لي؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "credits_summary",
+        "actual_agent": "study_plan",
+        "actual_intent": "credits_summary",
+        "time_seconds": 3.77
+      },
+      {
+        "message": "كم الساعات المتبقية؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "credits_summary",
+        "actual_agent": "study_plan",
+        "actual_intent": "credits_summary",
+        "time_seconds": 2.57
+      },
+      {
+        "message": "اقترح لي 5 مواد للفصل القادم",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "recommendations",
+        "actual_agent": "study_plan",
+        "actual_intent": "recommendations",
+        "time_seconds": 2.55
+      },
+      {
+        "message": "رشح لي مواد مناسبة",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "recommendations",
+        "actual_agent": "study_plan",
+        "actual_intent": "recommendations",
+        "time_seconds": 2.5
+      },
+      {
+        "message": "اعطني ملخص عن وضعي الأكاديمي",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "snapshot",
+        "actual_agent": "study_plan",
+        "actual_intent": "snapshot",
+        "time_seconds": 2.42
+      },
+      {
+        "message": "كيف وضعي الأكاديمي؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "snapshot",
+        "actual_agent": "study_plan",
+        "actual_intent": "snapshot",
+        "time_seconds": 2.36
+      },
+      {
+        "message": "لو جبت A في CS2105 و B في AI2001 كم يصير معدلي؟",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "gpa_simulate",
+        "actual_agent": "study_plan",
+        "actual_intent": "gpa_simulate",
+        "time_seconds": 2.41
+      },
+      {
+        "message": "CS2105=A و AI2001=B",
+        "passed": true,
+        "expected_agent": "study_plan",
+        "expected_intent": "gpa_simulate",
+        "actual_agent": "study_plan",
+        "actual_intent": "gpa_simulate",
+        "time_seconds": 2.34
+      },
+      {
+        "message": "ما هو تعريف العام الدراسي؟",
+        "passed": true,
+        "expected_agent": "knowledge_base",
+        "expected_intent": "knowledge_base_query",
+        "actual_agent": "knowledge_base",
+        "actual_intent": "knowledge_base_query",
+        "time_seconds": 4.17
+      },
+      {
+        "message": "ما المقصود بالمستوى الدراسي؟",
+        "passed": true,
+        "expected_agent": "knowledge_base",
+        "expected_intent": "knowledge_base_query",
+        "actual_agent": "knowledge_base",
+        "actual_intent": "knowledge_base_query",
+        "time_seconds": 3.46
+      },
+      {
+        "message": "ما معنى النظام الدراسي؟",
+        "passed": true,
+        "expected_agent": "knowledge_base",
+        "expected_intent": "knowledge_base_query",
+        "actual_agent": "knowledge_base",
+        "actual_intent": "knowledge_base_query",
+        "time_seconds": 2.98
+      },
+      {
+        "message": "ما هي حقوق الطلبة؟",
+        "passed": true,
+        "expected_agent": "knowledge_base",
+        "expected_intent": "knowledge_base_query",
+        "actual_agent": "knowledge_base",
+        "actual_intent": "knowledge_base_query",
+        "time_seconds": 3.91
+      },
+      {
+        "message": "ما هو التظلم؟",
+        "passed": true,
+        "expected_agent": "knowledge_base",
+        "expected_intent": "knowledge_base_query",
+        "actual_agent": "knowledge_base",
+        "actual_intent": "knowledge_base_query",
+        "time_seconds": 4.32
+      },
+      {
+        "message": "ما هي اللجنة الدائمة لحقوق الطلبة؟",
+        "passed": true,
+        "expected_agent": "knowledge_base",
+        "expected_intent": "knowledge_base_query",
+        "actual_agent": "knowledge_base",
+        "actual_intent": "knowledge_base_query",
+        "time_seconds": 2.97
+      },
+      {
+        "message": "ما هو الفصل الصيفي؟",
+        "passed": true,
+        "expected_agent": "knowledge_base",
+        "expected_intent": "knowledge_base_query",
+        "actual_agent": "knowledge_base",
+        "actual_intent": "knowledge_base_query",
+        "time_seconds": 3.85
+      },
+      {
+        "message": "ما هو تعريف العام الدراسي؟ وهل أقدر أسجل CS2105؟",
+        "passed": true,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "input_guard",
+        "actual_intent": "input_error",
+        "time_seconds": 0.01
+      },
+      {
+        "message": "CS2105",
+        "passed": true,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "input_guard",
+        "actual_intent": "input_error",
+        "time_seconds": 0.01
+      },
+      {
+        "message": "CS2105 AI2001",
+        "passed": true,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "input_guard",
+        "actual_intent": "input_error",
+        "time_seconds": 0.01
+      },
+      {
+        "message": "لو جبت ممتاز في CS2105",
+        "passed": true,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "input_guard",
+        "actual_intent": "input_error",
+        "time_seconds": 0.01
+      },
+      {
+        "message": "السلام عليكم",
+        "passed": true,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "input_guard",
+        "actual_intent": "input_error",
+        "time_seconds": 0.01
+      },
+      {
+        "message": "؟؟؟؟؟؟؟",
+        "passed": true,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "input_guard",
+        "actual_intent": "input_error",
+        "time_seconds": 0.01
+      },
+      {
+        "message": "من هو أفضل لاعب؟",
+        "passed": true,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "input_guard",
+        "actual_intent": "input_error",
+        "time_seconds": 0.01
+      },
+      {
+        "message": "معدلي if CS2105 A and rights student system what?",
+        "passed": false,
+        "expected_agent": "input_guard",
+        "expected_intent": "input_error",
+        "actual_agent": "study_plan",
+        "actual_intent": "gpa_simulate",
+        "time_seconds": 2.33
+      }
+    ]
+  }
+}
