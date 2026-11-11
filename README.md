@@ -33,7 +33,7 @@ The central contribution is the integration of rule-based academic calculations 
 ## Architecture
 
 <p align="center">
-  <img src="docs/images/Murshed-architecture.png" alt="Murshed system architecture and workflow overview" width="1000">
+  <img src="docs/images/murshed art.png" alt="Murshed system architecture and workflow overview" width="1000">
 </p>
 
 *Approved system architecture in Murshed's teal-and-sage interface palette.*
